@@ -1,5 +1,51 @@
+$primary: #2aa9e3;
+$primary-light: #7acef4;
+$bg-primary-light: #b3e7ff;
+
+$font-size-base: 16px;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-size: $font-size-base;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1310px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.site-header {
+    height: 80px;
+    padding-top: 24px;
+    margin-bottom: 32px;
+    background-color: $primary-light;
+}
+
+.site-logo {
+    &--img {
+        width: 300px;
+    }
+}
+
+.hero-section {
+    height: 700px;
+    background: url("../images/hero-bg.jpg") no-repeat center top/cover;
 }
