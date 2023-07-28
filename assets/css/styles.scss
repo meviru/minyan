@@ -1,6 +1,10 @@
 $primary: #2aa9e3;
 $primary-light: #7acef4;
+$primary-dark: #097cb0;
 $bg-primary-light: #b3e7ff;
+
+$white: #fff;
+$black: #000;
 
 $font-size-base: 16px;
 
@@ -25,6 +29,11 @@ a {
     text-decoration: none;
 }
 
+ul,
+ol {
+    list-style: none;
+}
+
 .container {
     width: 1310px;
     margin: 0 auto;
@@ -32,6 +41,36 @@ a {
     padding: 0 15px;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
+// Basic flex utilities
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+// Site header
 .site-header {
     height: 80px;
     padding-top: 24px;
@@ -42,6 +81,138 @@ a {
 .site-logo {
     &--img {
         width: 300px;
+    }
+}
+
+.user-menu {
+    position: absolute;
+    left: 50%;
+    z-index: 3;
+    transform: translateX(-50%);
+    &--icon {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: 0px 4px 4px 0px rgba($black, 0.4);
+    }
+    &--dropdown {
+        position: absolute;
+        top: 100%;
+        left: -39px;
+        z-index: 12;
+        width: 145px;
+        display: none;
+        margin-top: 30px;
+        padding: 16px 12px;
+        border-radius: 34px;
+        border: 3px solid $primary;
+        background-color: $white;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            left: 0;
+            right: 0;
+            bottom: 100%;
+            margin: 0 auto;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 30px solid $primary;
+        }
+    }
+    &--btn {
+        color: $white;
+        display: block;
+        text-align: center;
+        padding: 10px 12px;
+        border-radius: 10px;
+        transition: 0.25s ease;
+        background-color: $primary-light;
+        & + .user-menu--btn {
+            margin-top: 15px;
+        }
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}
+
+// Language switcher
+.lang-switcher {
+    position: relative;
+    z-index: 3;
+}
+
+.selected-lang {
+    position: relative;
+    z-index: 3;
+    width: 60px;
+    padding: 0 5px;
+    &--img {
+        display: block;
+        margin: 0 auto;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        top: 8px;
+        right: -22px;
+        border-top: 12px solid $white;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+    }
+}
+
+.lang-dropdown {
+    position: absolute;
+    width: 60px;
+    z-index: -1;
+    top: -10px;
+    display: none;
+    padding: 48px 5px 10px;
+    border-radius: 12px;
+    background-color: $primary-dark;
+    &--item {
+        & + .lang-dropdown--item {
+            margin-top: 10px;
+        }
+    }
+    &--flag {
+        display: block;
+    }
+    &--img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.create-minyan {
+    position: relative;
+    top: -12px;
+    text-align: center;
+    &--inner {
+        position: relative;
+        width: 178px;
+        height: 168px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: 0px 4px 4px 0px rgba($black, 0.4);
+        .hand-icon {
+            position: absolute;
+            bottom: 10px;
+            right: -30px;
+        }
+    }
+    &--text {
+        font-family: "Pacifico", sans-serif;
+        font-size: $font-size-base * 2.5;
+        color: $white;
+        line-height: 45px;
+        text-shadow: 0px 4px 4px rgba($black, 0.4);
     }
 }
 

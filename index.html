@@ -15,14 +15,60 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <div class="site-logo">
-                <a href="javascript:void(0)" class="site-logo--inner">
-                    <img src="assets/images/logo.png" alt="Minyan" class="site-logo--img" title="Minyan">
-                </a>
+            <div class="site-header--inner d-flex align-items-start justify-content-between">
+                <div class="site-logo">
+                    <a href="javascript:void(0)" class="site-logo--inner">
+                        <img src="assets/images/logo.png" alt="Minyan" class="site-logo--img" title="Minyan">
+                    </a>
+                </div>
+                <div class="user-menu">
+                    <div id="user-menu" class="user-menu--icon cursor-pointer d-flex align-items-center justify-content-center">
+                        <img src="assets/images/user-icon.svg" alt="User">
+                    </div>
+                    <div id="user-dropdown" class="user-menu--dropdown">
+                        <a href="javascript:void(0)" class="user-menu--btn">Sign Up</a>
+                        <a href="javascript:void(0)" class="user-menu--btn">Sign In</a>
+                    </div>
+                </div>
+                <div class="right-menu d-flex">
+                    <div class="lang-switcher">
+                        <div id="selected-lang" class="selected-lang cursor-pointer">
+                            <img class="selected-lang--img" src="assets/images/flag-france.svg" alt="Frace">
+                        </div>
+                        <ul id="lang-dropdown" class="lang-dropdown">
+                            <li class="lang-dropdown--item">
+                                <a href="javascript:void(0)" class="lang-dropdown--flag">
+                                    <img class="lang-dropdown--img" src="assets/images/flag-uk.svg"
+                                        alt="United Kingdom">
+                                </a>
+                            </li>
+                            <li class="lang-dropdown--item">
+                                <a href="javascript:void(0)" class="lang-dropdown--flag">
+                                    <img class="lang-dropdown--img" src="assets/images/flag-spain.svg" alt="Spain">
+                                </a>
+                            </li>
+                            <li class="lang-dropdown--item">
+                                <a href="javascript:void(0)" class="lang-dropdown--flag">
+                                    <img class="lang-dropdown--img" src="assets/images/flag-israel.svg" alt="Israel">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="create-minyan cursor-pointer">
+                        <div class="create-minyan--inner d-flex align-items-center justify-content-center">
+                            <img src="assets/images/create-your-minyan.svg" alt="Create your minyan">
+                            <img src="assets/images/hand-icon.svg" class="hand-icon">
+                        </div>
+                        <div class="create-minyan--text">Create your Minyan</div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <section class="hero-section"></section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
