@@ -72,6 +72,7 @@ button {
   box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
 }
 .btn:hover {
+  border-color: #097cb0;
   background-color: #097cb0;
 }
 .btn.btn-outline {
@@ -803,6 +804,64 @@ button {
   color: #097cb0;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.contact-section .main-title {
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  width: 620px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+.form-group label {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+  display: block;
+  color: #097cb0;
+}
+.form-group .wpcf7-form-control-wrap {
+  display: block;
+}
+
+.form-control {
+  height: 24px;
+  width: 100%;
+  outline: none;
+  padding: 10px 8px;
+  border: 1px solid #2aa9e3;
+}
+.form-control.wpcf7-textarea {
+  resize: none;
+  height: 270px;
+}
+
+.form-action {
+  text-align: center;
+}
+.form-action .wpcf7-submit {
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 16px;
+  border-radius: 18px;
+  transition: 0.25s ease;
+  background-color: #097cb0;
+}
+.form-action .wpcf7-submit:hover {
+  background-color: #086b98;
+}
+
+.wpcf7-spinner {
+  display: none;
 }
 
 @media screen and (max-width: 1280px) {
