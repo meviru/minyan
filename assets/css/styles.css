@@ -1022,15 +1022,15 @@ textarea.form-control {
 }
 .register-form .form-group--label,
 .common-form .form-group--label {
-  flex: 0 0 52%;
-  width: 52%;
+  flex: 0 0 54%;
+  width: 54%;
   font-size: 15px;
   line-height: normal;
 }
 .register-form .form-group--control,
 .common-form .form-group--control {
-  flex: 0 0 48%;
-  width: 48%;
+  flex: 0 0 46%;
+  width: 46%;
 }
 .register-form .form-group--file,
 .common-form .form-group--file {
@@ -1109,6 +1109,10 @@ textarea.form-control {
   text-align: center;
   flex-direction: column;
   font-size: 10px;
+}
+.register-form .form-control.mb-1,
+.common-form .form-control.mb-1 {
+  margin-bottom: 5px;
 }
 
 .form-checkbox,

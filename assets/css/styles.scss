@@ -1142,14 +1142,14 @@ textarea {
             margin: 10px 0 10px;
         }
         &--label {
-            flex: 0 0 52%;
-            width: 52%;
+            flex: 0 0 54%;
+            width: 54%;
             font-size: $font-size-base * 0.9375;
             line-height: normal;
         }
         &--control {
-            flex: 0 0 48%;
-            width: 48%;
+            flex: 0 0 46%;
+            width: 46%;
         }
         &--file {
             position: relative;
@@ -1220,6 +1220,9 @@ textarea {
             text-align: center;
             flex-direction: column;
             font-size: $font-size-base * 0.625;
+        }
+        &.mb-1 {
+            margin-bottom: 5px;
         }
     }
 }

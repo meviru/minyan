@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minyan | Create</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Pacifico&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header--inner d-flex align-items-start justify-content-between">
+                <div class="site-logo">
+                    <a href="javascript:void(0)" class="site-logo--inner">
+                        <img src="assets/images/logo.png" alt="Minyan" class="site-logo--img" title="Minyan">
+                    </a>
+                </div>
+                <div class="user-menu">
+                    <div id="user-menu"
+                        class="user-menu--icon cursor-pointer d-flex align-items-center justify-content-center">
+                        <img src="assets/images/user-icon.svg" alt="User">
+                    </div>
+                    <div id="user-dropdown" class="user-menu--dropdown">
+                        <a href="javascript:void(0)" class="user-menu--btn">Sign Up</a>
+                        <a href="javascript:void(0)" class="user-menu--btn">Sign In</a>
+                    </div>
+                </div>
+                <div class="right-menu d-flex">
+                    <div class="lang-switcher">
+                        <div id="selected-lang" class="selected-lang cursor-pointer">
+                            <img class="selected-lang--img" src="assets/images/flag-france.svg" alt="Frace">
+                        </div>
+                        <ul id="lang-dropdown" class="lang-dropdown">
+                            <li class="lang-dropdown--item">
+                                <a href="javascript:void(0)" class="lang-dropdown--flag">
+                                    <img class="lang-dropdown--img" src="assets/images/flag-uk.svg"
+                                        alt="United Kingdom">
+                                </a>
+                            </li>
+                            <li class="lang-dropdown--item">
+                                <a href="javascript:void(0)" class="lang-dropdown--flag">
+                                    <img class="lang-dropdown--img" src="assets/images/flag-spain.svg" alt="Spain">
+                                </a>
+                            </li>
+                            <li class="lang-dropdown--item">
+                                <a href="javascript:void(0)" class="lang-dropdown--flag">
+                                    <img class="lang-dropdown--img" src="assets/images/flag-israel.svg" alt="Israel">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="create-minyan cursor-pointer">
+                        <div class="create-minyan--inner d-flex align-items-center justify-content-center">
+                            <img src="assets/images/create-your-minyan.svg" alt="Create your minyan">
+                            <img src="assets/images/hand-icon.svg" class="hand-icon">
+                        </div>
+                        <div class="create-minyan--text">Create your Minyan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="content-section create-minyan-wrapper vacation-minyan">
+        <div class="container">
+            <ul class="breadcrumb breadcrumb-top">
+                <li class="breadcrumb-item">
+                    <a href="javascript:void(0)" class="breadcrumb-link">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="javascript:void(0)" class="breadcrumb-link">Create a Minyan</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <a href="javascript:void(0)" class="breadcrumb-link">Create a Vacation Minyan</a>
+                </li>
+            </ul>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="javascript:void(0)" class="breadcrumb-link">1. Identification</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="javascript:void(0)" class="breadcrumb-link">2. Minyan Type</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <a href="javascript:void(0)" class="breadcrumb-link">3. Creation</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="javascript:void(0)" class="breadcrumb-link">4. Verification</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="javascript:void(0)" class="breadcrumb-link">5. Confirmation</a>
+                </li>
+            </ul>
+            <div class="main-title text-center">
+                <h1 class="main-title--text text-vacation-color">Creation of a Vacation Minyan</h1>
+            </div>
+            <form action="" class="common-form">
+                <div class="row">
+                    <div class="column-6">
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">ORGANIZER</h2>
+                            <div class="form-content">
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <label for="organizer" class="form-group--label">Organizer name <sup>*</sup>
+                                            :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="organizer" id="organizer" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="form-group--label">Country <sup>*</sup> :</label>
+                                        <div class="form-group--control">
+                                            <select name="country" id="country"
+                                                class="form-control form-control--select">
+                                                <option selected disabled>Select a country</option>
+                                                <option>France</option>
+                                                <option>United Kingdom</option>
+                                                <option>Spain</option>
+                                                <option>Israel</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address" class="form-group--label">Address <sup>*</sup> :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="address" id="address" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postcode" class="form-group--label">Postal code <sup>*</sup>
+                                            :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="postcode" id="postcode" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city" class="form-group--label">City <sup>*</sup> :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="city" id="city" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone" class="form-group--label">Phone <sup>*</sup> :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="phone" id="phone" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cellphone" class="form-group--label">Cellphone <sup>*</sup>
+                                            :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="cellphone" id="cellphone" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="faxnumber" class="form-group--label">Fax Number :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="faxnumber" id="faxnumber" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="form-group--label">E-mail <sup>*</sup> :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="email" id="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="website" class="form-group--label">Website (recommended) :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="website" id="website" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group fw-group">
+                                        <label for="picture" class="form-group--label">Picture of the organizer:</label>
+                                        <div class="form-group--control d-flex align-items-center">
+                                            <div class="form-group--file">
+                                                <span class="form-group--file-text">Choose the file</span>
+                                                <input type="file" name="picture" id="picture"
+                                                    class="form-control form-control--file">
+                                            </div>
+                                            <div
+                                                class="w-100 form-control--info d-flex align-items-center justify-content-between">
+                                                <strong>No file selected</strong>
+                                                <em>(Maximum size: 5 MB)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">PLACE OF STAY</h2>
+                            <div class="form-content">
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <label for="place" class="form-group--label">Name of the place (hotel for
+                                            example) <sup>*</sup>
+                                            :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="place" id="place" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="country" class="form-group--label">Country <sup>*</sup> :</label>
+                                        <div class="form-group--control">
+                                            <select name="country" id="country"
+                                                class="form-control form-control--select">
+                                                <option selected disabled>Select a country</option>
+                                                <option>France</option>
+                                                <option>United Kingdom</option>
+                                                <option>Spain</option>
+                                                <option>Israel</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="address" class="form-group--label">Address <sup>*</sup> :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="address" id="address" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postcode" class="form-group--label">Postal code <sup>*</sup>
+                                            :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="postcode" id="postcode" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="city" class="form-group--label">City <sup>*</sup> :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="city" id="city" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group fw-group">
+                                        <label for="picture" class="form-group--label">Picture of the place:</label>
+                                        <div class="form-group--control d-flex align-items-center">
+                                            <div class="form-group--file">
+                                                <span class="form-group--file-text">Choose the file</span>
+                                                <input type="file" name="picture" id="picture"
+                                                    class="form-control form-control--file">
+                                            </div>
+                                            <div
+                                                class="w-100 form-control--info d-flex align-items-center justify-content-between">
+                                                <strong>No file selected</strong>
+                                                <em>(Maximum size: 5 MB)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">DATE OF STAY</h2>
+                            <div class="form-content">
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <div class="form-group--top">I would like to organize this minyan for *:</div>
+                                        <label for="celebrations" class="form-group--label">The celebrations of
+                                            :</label>
+                                        <div class="form-group--control">
+                                            <select name="celebrations" class="form-control form-control--select">
+                                                <option selected disabled>Sélectionner la fête</option>
+                                                <option>Sukkot</option>
+                                                <option>Pessah</option>
+                                                <option>Shavout</option>
+                                                <option>Vacation</option>
+                                                <option>Weekend</option>
+                                                <option>Full Shabbat</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="otherCelebration" class="form-group--label">If Other</label>
+                                        <div class="form-group--control">
+                                            <input type="text" id="otherCelebration" name="otherCelebration"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-group--top">I would like to organize this Minyan from *:</div>
+                                        <label for="fromDate" class="form-group--label">Opening date from :</label>
+                                        <div class="form-group--control">
+                                            <input type="date" name="fromDate" id="fromDate" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="toDate" class="form-group--label">To :</label>
+                                        <div class="form-group--control">
+                                            <input type="date" name="toDate" id="toDate" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">PRESENTATION OF STAY</h2>
+                            <div class="form-content">
+                                <div class="form-group">
+                                    <textarea name="presentation" id="presentation" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">PRICE OF STAY</h2>
+                            <div class="form-content">
+                                <div class="form-group show-currency">
+                                    <div class="form-group--top">Price of the stay/week from :</div>
+                                    <label for="adult" class="form-group--label">Adult :</label>
+                                    <div class="form-group--control">
+                                        <input type="text" id="adult" name="adult" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group show-currency">
+                                    <label for="child" class="form-group--label">Child :</label>
+                                    <div class="form-group--control">
+                                        <input type="text" id="child" name="child" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group-divider fw-bold text-primary">and/or</div>
+                                <div class="form-group show-currency">
+                                    <div class="form-group--top">Price of the stay/day from :</div>
+                                    <label for="adult2" class="form-group--label">Adult :</label>
+                                    <div class="form-group--control">
+                                        <input type="text" id="adult2" name="adult2" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group show-currency">
+                                    <label for="child2" class="form-group--label">Child :</label>
+                                    <div class="form-group--control">
+                                        <input type="text" id="child2" name="child2" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-6">
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">DESCRIPTION OF STAY</h2>
+                            <div class="form-content">
+                                <div class="form-group">
+                                    <label for="country" class="form-group--label">Type of stay <sup>*</sup> :</label>
+                                    <div class="form-group--control">
+                                        <select name="country" id="country" class="form-control form-control--select">
+                                            <option selected disabled>Sélectionner</option>
+                                            <option>Mer</option>
+                                            <option>Montagne</option>
+                                            <option>Campagne</option>
+                                            <option>Ville</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Comment :</label>
+                                    <div class="form-group--control">
+                                        <textarea name="comment" id="comment" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group show-currency">
+                                    <label for="donate" class="form-group--label">Number of rooms :</label>
+                                    <div class="form-group--control">
+                                        <input type="text" name="donate" id="donate" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Hotel reserved exclusively for the
+                                        stay :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption"
+                                                    id="radioOption">
+                                                <label for="radioOption" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption"
+                                                    id="radioOption1">
+                                                <label for="radioOption1" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Outdoor pool <sup>*</sup> :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption1"
+                                                    id="radioOption2">
+                                                <label for="radioOption2" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption1"
+                                                    id="radioOption3">
+                                                <label for="radioOption3" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Separate hours <sup>*</sup> :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption2"
+                                                    id="radioOption4">
+                                                <label for="radioOption4" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption2"
+                                                    id="radioOption5">
+                                                <label for="radioOption5" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Indoor pool <sup>*</sup> :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption3"
+                                                    id="radioOption6">
+                                                <label for="radioOption6" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption3"
+                                                    id="radioOption7">
+                                                <label for="radioOption7" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Spa <sup>*</sup> :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption4"
+                                                    id="radioOption8">
+                                                <label for="radioOption8" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption4"
+                                                    id="radioOption9">
+                                                <label for="radioOption9" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Jacuzzi :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption5"
+                                                    id="radioOption10">
+                                                <label for="radioOption10" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption5"
+                                                    id="radioOption11">
+                                                <label for="radioOption11" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Fitness room :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption6"
+                                                    id="radioOption12">
+                                                <label for="radioOption12" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption6"
+                                                    id="radioOption13">
+                                                <label for="radioOption13" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Activities :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="tennis"
+                                                id="tennis">
+                                            <label for="tennis" class="form-checkbox--label">Tennis</label>
+                                        </div>
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="pool" id="pool">
+                                            <label for="pool" class="form-checkbox--label">Pool</label>
+                                        </div>
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="vollyball"
+                                                id="vollyball">
+                                            <label for="vollyball" class="form-checkbox--label">Vollyball</label>
+                                        </div>
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="lake" id="lake">
+                                            <label for="lake" class="form-checkbox--label">Lake</label>
+                                        </div>
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="sea" id="sea">
+                                            <label for="sea" class="form-checkbox--label">Sea</label>
+                                        </div>
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="pingpong"
+                                                id="pingpong">
+                                            <label for="pingpong" class="form-checkbox--label">Ping-pong</label>
+                                        </div>
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="billiards"
+                                                id="billiards">
+                                            <label for="billiards" class="form-checkbox--label">Billiards</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Other :</label>
+                                    <div class="form-group--control">
+                                        <input type="text" class="form-control mb-1">
+                                        <input type="text" class="form-control mb-1">
+                                        <input type="text" class="form-control mb-1">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Close to the sea <sup>*</sup>
+                                        :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption7"
+                                                    id="radioOption14">
+                                                <label for="radioOption14" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption7"
+                                                    id="radioOption15">
+                                                <label for="radioOption15" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">If yes, how many km :</label>
+                                    <div class="form-group--control">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Close to the mountains <sup>*</sup>
+                                        :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption8"
+                                                    id="radioOption16">
+                                                <label for="radioOption16" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption8"
+                                                    id="radioOption17">
+                                                <label for="radioOption17" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">If yes, how many km :</label>
+                                    <div class="form-group--control">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">ADDITIONAL INFORMATIONS</h2>
+                            <div class="form-content">
+                                <div class="form-group">
+                                    <div class="form-group--top">Under strict kashrut supervision (achgara) :</div>
+                                    <label for="meat" class="form-group--label">Meat :</label>
+                                    <div class="form-group--control">
+                                        <select name="meat" class="form-control form-control--select">
+                                            <option selected disabled>Sélectionner</option>
+                                            <option>Beth din</option>
+                                            <option>Glatt</option>
+                                            <option>Halakbeth Yossef</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">If Beth Din, which one ?</label>
+                                    <div class="form-group--control">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">If Other</label>
+                                    <div class="form-group--control">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Halav Israël :</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption9"
+                                                    id="radioOption18">
+                                                <label for="radioOption18" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption9"
+                                                    id="radioOption19">
+                                                <label for="radioOption19" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment" class="form-group--label">Rabani present during the stays
+                                        :</label>
+                                    <div class="form-group--control">
+                                        <input type="text" class="form-control mb-1">
+                                        <input type="text" class="form-control mb-1">
+                                        <input type="text" class="form-control mb-1">
+                                    </div>
+                                </div>
+                                <h3 class="form-group-divider fw-bold text-primary">Schedules of Téfilot * :</h3>
+                                <br>
+                                <div class="form-group form-group--check">
+                                    <div class="form-group--label">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="Chaharit"
+                                                id="Chaharit">
+                                            <label for="Chaharit" class="form-checkbox--label">Chaharit at netz</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group--control">
+                                        <input type="time" name="ChaharitTime" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group--check">
+                                    <div class="form-group--label">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="Odou" id="Odou">
+                                            <label for="Odou" class="form-checkbox--label">Chararit (Odou)</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group--control">
+                                        <input type="time" name="OdouTime" class="form-control">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group form-group--check">
+                                    <div class="form-group--label">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="guedola"
+                                                id="guedola">
+                                            <label for="guedola" class="form-checkbox--label">Minh'a guedola</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group--control">
+                                        <input type="time" name="guedolaTime" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group--check">
+                                    <div class="form-group--label">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="ketana"
+                                                id="ketana">
+                                            <label for="ketana" class="form-checkbox--label">Minh'a ketana</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group--control">
+                                        <input type="time" name="ketanaTime" class="form-control">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group form-group--check">
+                                    <div class="form-group--label">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="Arvit" id="Arvit">
+                                            <label for="Arvit" class="form-checkbox--label">Arvit after Minh'a</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group--control">
+                                        <input type="time" name="ArvitTime" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group--check">
+                                    <div class="form-group--label">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="ArvitNight"
+                                                id="ArvitNight">
+                                            <label for="ArvitNight" class="form-checkbox--label">Arvit at night</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group--control">
+                                        <input type="time" name="ArvitNightTime" class="form-control">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="celebrations" class="form-group--label">Rites *</label>
+                                    <div class="form-group--control">
+                                        <select name="celebrations" class="form-control form-control--select">
+                                            <option selected disabled>Select a rite</option>
+                                            <option>Sephardic</option>
+                                            <option>Ashkenazi</option>
+                                            <option>Habad</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group--check">
+                                    <label class="form-group--label">Sefer Torah *</label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio-inline">
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption9"
+                                                    id="radioOption20">
+                                                <label for="radioOption20" class="form-radio--label">Yes</label>
+                                            </div>
+                                            <div class="form-radio">
+                                                <input type="radio" class="form-radio--input" name="radioOption9"
+                                                    id="radioOption21">
+                                                <label for="radioOption21" class="form-radio--label">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-form-action text-center">
+                    <button type="submit" name="submit" class="btn btn-primary btn-vacation">View my Official Minyan
+                        creation before confirming</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <ul class="top-footer d-flex align-items-end justify-content-center">
+                    <li class="top-footer--item">
+                        <a href="javascript:void(0)" class="top-footer--link">Who we are?</a>
+                    </li>
+                    <li class="top-footer--item">
+                        <a href="javascript:void(0)" class="top-footer--link">Definations</a>
+                    </li>
+                    <li class="top-footer--item">
+                        <a href="javascript:void(0)" class="footer-logo">
+                            <img src="assets/images/footer-logo.svg" class="footer-logo--img" alt="Minyan">
+                        </a>
+                    </li>
+                    <li class="top-footer--item">
+                        <a href="javascript:void(0)" class="top-footer--link">Medias</a>
+                    </li>
+                    <li class="top-footer--item">
+                        <a href="javascript:void(0)" class="top-footer--link">Contact</a>
+                    </li>
+                    <li class="top-footer--item">
+                        <a href="javascript:void(0)" class="top-footer--link">Report an error</a>
+                    </li>
+                </ul>
+                <ul class="social-media d-flex align-items-center justify-content-center">
+                    <li class="social-media--item">
+                        <a href="javascript:void(0)" class="social-media--link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z">
+                                </path>
+                                <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media--item">
+                        <a href="javascript:void(0)" class="social-media--link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media--item">
+                        <a href="javascript:void(0)" class="social-media--link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media--item">
+                        <a href="javascript:void(0)" class="social-media--link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M4.265 3 3 6.236v13.223h4.502V21l2.531.85 2.392-2.391h3.658l4.923-4.924V3H4.265zm15.052 10.691-2.813 2.814h-4.502l-2.391 2.391v-2.391H5.813V4.688h13.504v9.003zm-2.812-5.767v4.923h-1.688V7.924h1.688zm-4.502 0v4.923h-1.688V7.924h1.688z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-media--item">
+                        <a href="javascript:void(0)" class="social-media--link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright-info text-center">2010 — 2023 - minyan.world<sup>&copy;</sup></div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
