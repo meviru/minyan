@@ -1277,6 +1277,7 @@ textarea.form-control {
 }
 
 .common-form-wrapper {
+  flex-grow: 1;
   padding: 17px 23px;
   border-radius: 25px;
   border: 2px solid #097cb0;
@@ -1296,7 +1297,9 @@ textarea.form-control {
   margin: 0 -28px;
 }
 .common-form .column-6 {
+  display: flex;
   padding: 0 28px;
+  flex-direction: column;
 }
 .common-form .form-group .form-checkbox--label,
 .common-form .form-group .form-radio--label {
