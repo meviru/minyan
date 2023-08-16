@@ -345,7 +345,7 @@ button {
 }
 
 .search-wrapper {
-  margin-top: -45px;
+  margin-top: -205px;
   margin-bottom: 20px;
 }
 
@@ -1570,7 +1570,7 @@ textarea.form-control {
     font-size: 20px;
   }
   .search-wrapper {
-    margin-top: -30px;
+    margin-top: -125px;
   }
   .search-bar--input {
     height: 60px;
