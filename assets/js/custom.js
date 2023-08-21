@@ -1,12 +1,12 @@
-$(document).ready(function () {
-    $("#user-menu").click(function () {
-        $("#user-dropdown").fadeToggle(150);
-        $("#lang-dropdown").hide();
+jQuery(document).ready(function () {
+    jQuery("#user-menu").click(function () {
+        jQuery("#user-dropdown").fadeToggle(150);
+        jQuery("#lang-dropdown").hide();
     });
 
-    $("#selected-lang").click(function () {
-        $("#lang-dropdown").fadeToggle(150);
-        $("#user-dropdown").hide();
+    jQuery("#selected-lang").click(function () {
+        jQuery("#lang-dropdown").fadeToggle(150);
+        jQuery("#user-dropdown").hide();
     });
 
     const config = {
@@ -34,11 +34,11 @@ $(document).ready(function () {
         ]
     }
 
-    $("#slider").slick(config);
+    jQuery("#slider").slick(config);
 
-    $("#slider-2").slick(config);
+    jQuery("#slider-2").slick(config);
 
-    $("#slider-3").slick(config);
+    jQuery("#slider-3").slick(config);
 
-    $("#slider-4").slick(config);
+    jQuery("#slider-4").slick(config);
 });
