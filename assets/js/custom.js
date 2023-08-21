@@ -9,11 +9,13 @@ $(document).ready(function () {
         $("#user-dropdown").hide();
     });
 
-    $("#slider").slick({
+    const config = {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
         dots: true,
+        centerMode: true,
+        centerPadding: 0,
         responsive: [
             {
                 breakpoint: 992,
@@ -30,74 +32,13 @@ $(document).ready(function () {
                 }
             },
         ]
-    });
+    }
 
-    $("#slider-2").slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-        ]
-    });
+    $("#slider").slick(config);
 
-    $("#slider-3").slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-        ]
-    });
+    $("#slider-2").slick(config);
 
-    $("#slider-4").slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                }
-            },
-        ]
-    });
+    $("#slider-3").slick(config);
+
+    $("#slider-4").slick(config);
 });
