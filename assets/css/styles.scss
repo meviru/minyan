@@ -139,7 +139,8 @@ button {
 
         &:hover {
             color: $white;
-            background-color: $official-minyan;
+            border-color: lighten($official-minyan, 5%);
+            background-color: lighten($official-minyan, 5%);
         }
     }
     &.btn-private {
@@ -149,7 +150,8 @@ button {
 
         &:hover {
             color: $white;
-            background-color: $private-minyan;
+            border-color: lighten($private-minyan, 10%);
+            background-color: lighten($private-minyan, 10%);
         }
     }
     &.btn-vacation {
@@ -159,7 +161,8 @@ button {
 
         &:hover {
             color: $white;
-            background-color: $vacation-minyan;
+            border-color: darken($vacation-minyan, 10%);
+            background-color: darken($vacation-minyan, 10%);
         }
     }
 }
@@ -829,7 +832,9 @@ button {
     }
 
     &--text {
+        font-family: "Pacifico", sans-serif;
         color: $primary-dark;
+        font-weight: normal;
         font-size: $font-size-base * 2.5;
         line-height: $font-size-base * 3.5;
 
@@ -1526,6 +1531,75 @@ textarea {
         padding: 12px 20px;
         font-size: $font-size-base * 1.5;
         border-radius: 19px;
+        text-transform: none;
+    }
+}
+
+.column-4 {
+    width: 33.33%;
+    flex: 0 0 33.33%;
+}
+
+.minyan-create {
+    .row {
+        margin: 0 -20px;
+        flex-wrap: wrap;
+    }
+    .column-4 {
+        padding: 0 20px;
+        margin-bottom: 30px;
+        @media screen and (max-width: 991px) {
+            width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+    &--inner {
+        padding: 18px 15px;
+        border-radius: 25px;
+        box-shadow: 0px 4px 4px 0px rgba($black, 0.4);
+        &.bg-official {
+            background-color: lighten($official-minyan, 45%);
+        }
+        &.bg-private {
+            background-color: lighten($private-minyan, 50%);
+        }
+        &.bg-vacation {
+            background-color: lighten($vacation-minyan, 15%);
+        }
+    }
+    &--title {
+        font-family: "Pacifico", sans-serif;
+        font-size: $font-size-base * 2;
+        font-weight: normal;
+        color: $white;
+        @media screen and (max-width: 991px) {
+            font-size: $font-size-base * 1.625;
+        }
+    }
+    &--bottom {
+        display: flex;
+        padding: 20px;
+        margin-top: 25px;
+        min-height: 146px;
+        border-radius: 25px;
+        flex-direction: column;
+        background-color: $white;
+        justify-content: space-between;
+    }
+    &--desc {
+        font-size: $font-size-base * 0.875;
+        font-weight: 600;
+        line-height: $font-size-base * 1.1875;
+    }
+    &--btn {
+        width: 224px;
+        margin: 0 auto;
+        max-width: 100%;
+        cursor: pointer;
+        padding: 5px 20px;
+        font-size: $font-size-base * 1.25;
+        font-weight: 600;
+        border-radius: 30px;
         text-transform: none;
     }
 }
