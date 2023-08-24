@@ -68,7 +68,7 @@
             </div>
         </div>
     </header>
-    <section class="content-section create-minyan-wrapper vacation-minyan">
+    <section class="content-section create-minyan-wrapper official-minyan">
         <div class="container">
             <ul class="breadcrumb breadcrumb-top">
                 <li class="breadcrumb-item">
@@ -78,7 +78,7 @@
                     <a href="javascript:void(0)" class="breadcrumb-link">Create a Minyan</a>
                 </li>
                 <li class="breadcrumb-item active">
-                    <a href="javascript:void(0)" class="breadcrumb-link">Create a Vacation Minyan</a>
+                    <a href="javascript:void(0)" class="breadcrumb-link">Creation of an Official Minyan</a>
                 </li>
             </ul>
             <ul class="breadcrumb">
@@ -99,20 +99,20 @@
                 </li>
             </ul>
             <div class="main-title text-center">
-                <h1 class="main-title--text text-vacation-color">Creation of a Vacation Minyan</h1>
+                <h1 class="main-title--text text-official-color">Creation of an Official Minyan (synagogue)</h1>
             </div>
             <form action="" class="common-form">
                 <div class="row">
                     <div class="column-6">
                         <div class="common-form-wrapper">
-                            <h2 class="common-title">ORGANIZER</h2>
-                            <div class="form-content">
+                            <h2 class="common-title">MINYAN LOCATION'S COORDINATE</h2>
+                            <div class="form-content pt-3">
                                 <div class="form-content">
                                     <div class="form-group">
-                                        <label for="organizer" class="form-group--label">Organizer name <sup>*</sup>
-                                            :</label>
+                                        <label for="institution" class="form-group--label">Institution Name
+                                            <sup>*</sup>:</label>
                                         <div class="form-group--control">
-                                            <input type="text" name="organizer" id="organizer" class="form-control">
+                                            <input type="text" name="institution" id="institution" class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -135,27 +135,26 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="postcode" class="form-group--label">Postal code <sup>*</sup>
-                                            :</label>
-                                        <div class="form-group--control">
-                                            <input type="text" name="postcode" id="postcode" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
                                         <label for="city" class="form-group--label">City <sup>*</sup> :</label>
                                         <div class="form-group--control">
                                             <input type="text" name="city" id="city" class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="phone" class="form-group--label">Phone <sup>*</sup> :</label>
+                                        <label for="postcode" class="form-group--label">Postcode <sup>*</sup>
+                                            :</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="postcode" id="postcode" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone" class="form-group--label">Phone number <sup>*</sup> :</label>
                                         <div class="form-group--control">
                                             <input type="text" name="phone" id="phone" class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="cellphone" class="form-group--label">Cellphone <sup>*</sup>
-                                            :</label>
+                                        <label for="cellphone" class="form-group--label">Cellphone:</label>
                                         <div class="form-group--control">
                                             <input type="text" name="cellphone" id="cellphone" class="form-control">
                                         </div>
@@ -167,20 +166,16 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="email" class="form-group--label">E-mail <sup>*</sup> :</label>
+                                        <label for="transportation" class="form-group--label">Transportation Nearby
+                                            :</label>
                                         <div class="form-group--control">
-                                            <input type="text" name="email" id="email" class="form-control">
+                                            <textarea name="transportation" id="transportation"
+                                                class="form-control"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="website" class="form-group--label">Website (recommended) :</label>
+                                        <label for="picture" class="form-group--label">Institution Picture:</label>
                                         <div class="form-group--control">
-                                            <input type="text" name="website" id="website" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group fw-group">
-                                        <label for="picture" class="form-group--label">Picture of the organizer:</label>
-                                        <div class="form-group--control d-flex align-items-center">
                                             <div class="form-group--file">
                                                 <span class="form-group--file-text">Choose the file</span>
                                                 <input type="file" name="picture" id="picture"
@@ -193,151 +188,48 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="common-form-wrapper">
-                            <h2 class="common-title">PLACE OF STAY</h2>
-                            <div class="form-content">
-                                <div class="form-content">
                                     <div class="form-group">
-                                        <label for="place" class="form-group--label">Name of the place (hotel for
-                                            example) <sup>*</sup>
+                                        <label for="managerRabbi" class="form-group--label">Manager or Rabbi<sup>*</sup>
                                             :</label>
                                         <div class="form-group--control">
-                                            <input type="text" name="place" id="place" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="country" class="form-group--label">Country <sup>*</sup> :</label>
-                                        <div class="form-group--control">
-                                            <select name="country" id="country"
-                                                class="form-control form-control--select">
-                                                <option selected disabled>Select a country</option>
-                                                <option>France</option>
-                                                <option>United Kingdom</option>
-                                                <option>Spain</option>
-                                                <option>Israel</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="address" class="form-group--label">Address <sup>*</sup> :</label>
-                                        <div class="form-group--control">
-                                            <input type="text" name="address" id="address" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="postcode" class="form-group--label">Postal code <sup>*</sup>
-                                            :</label>
-                                        <div class="form-group--control">
-                                            <input type="text" name="postcode" id="postcode" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="city" class="form-group--label">City <sup>*</sup> :</label>
-                                        <div class="form-group--control">
-                                            <input type="text" name="city" id="city" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="form-group fw-group">
-                                        <label for="picture" class="form-group--label">Picture of the place:</label>
-                                        <div class="form-group--control d-flex align-items-center">
-                                            <div class="form-group--file">
-                                                <span class="form-group--file-text">Choose the file</span>
-                                                <input type="file" name="picture" id="picture"
-                                                    class="form-control form-control--file">
-                                            </div>
-                                            <div
-                                                class="w-100 form-control--info d-flex align-items-center justify-content-between">
-                                                <strong>No file selected</strong>
-                                                <em>(Maximum size: 5 MB)</em>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="common-form-wrapper">
-                            <h2 class="common-title">DATE OF STAY</h2>
-                            <div class="form-content">
-                                <div class="form-content">
-                                    <div class="form-group">
-                                        <div class="form-group--top">I would like to organize this minyan for *:</div>
-                                        <label for="celebrations" class="form-group--label">The celebrations of
-                                            :</label>
-                                        <div class="form-group--control">
-                                            <select name="celebrations" class="form-control form-control--select">
-                                                <option selected disabled>Sélectionner la fête</option>
-                                                <option>Sukkot</option>
-                                                <option>Pessah</option>
-                                                <option>Shavout</option>
-                                                <option>Vacation</option>
-                                                <option>Weekend</option>
-                                                <option>Full Shabbat</option>
-                                                <option>Other</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="otherCelebration" class="form-group--label">If Other</label>
-                                        <div class="form-group--control">
-                                            <input type="text" id="otherCelebration" name="otherCelebration"
+                                            <input type="text" name="managerRabbi" id="managerRabbi"
                                                 class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <div class="form-group--top">I would like to organize this Minyan from *:</div>
-                                        <label for="fromDate" class="form-group--label">Opening date from :</label>
+                                        <label for="pictureManager" class="form-group--label">Picture of the manager or
+                                            rabbi <sup>*</sup>:</label>
                                         <div class="form-group--control">
-                                            <input type="date" name="fromDate" id="fromDate" class="form-control">
+                                            <div class="form-group--file">
+                                                <span class="form-group--file-text">Choose the file</span>
+                                                <input type="file" name="pictureManager" id="pictureManager"
+                                                    class="form-control form-control--file">
+                                            </div>
+                                            <div
+                                                class="w-100 form-control--info d-flex align-items-center justify-content-between">
+                                                <strong>No file selected</strong>
+                                                <em>(Maximum size: 5 MB)</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">ADDITIONAL CONTACT DETAILS</h2>
+                            <div class="form-content">
+                                <div class="form-content py-4">
+                                    <div class="form-group">
+                                        <label for="website" class="form-group--label">Website</label>
+                                        <div class="form-group--control">
+                                            <input type="text" name="website" id="website" class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="toDate" class="form-group--label">To :</label>
+                                        <label for="email" class="form-group--label">E-mail</label>
                                         <div class="form-group--control">
-                                            <input type="date" name="toDate" id="toDate" class="form-control">
+                                            <input type="text" name="email" id="email" class="form-control">
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="common-form-wrapper">
-                            <h2 class="common-title">PRESENTATION OF STAY</h2>
-                            <div class="form-content">
-                                <div class="form-group">
-                                    <textarea name="presentation" id="presentation" class="form-control"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="common-form-wrapper">
-                            <h2 class="common-title">PRICE OF STAY</h2>
-                            <div class="form-content">
-                                <div class="form-group show-currency">
-                                    <div class="form-group--top">Price of the stay/week from :</div>
-                                    <label for="adult" class="form-group--label">Adult :</label>
-                                    <div class="form-group--control">
-                                        <input type="text" id="adult" name="adult" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group show-currency">
-                                    <label for="child" class="form-group--label">Child :</label>
-                                    <div class="form-group--control">
-                                        <input type="text" id="child" name="child" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group-divider fw-bold text-primary">and/or</div>
-                                <div class="form-group show-currency">
-                                    <div class="form-group--top">Price of the stay/day from :</div>
-                                    <label for="adult2" class="form-group--label">Adult :</label>
-                                    <div class="form-group--control">
-                                        <input type="text" id="adult2" name="adult2" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group show-currency">
-                                    <label for="child2" class="form-group--label">Child :</label>
-                                    <div class="form-group--control">
-                                        <input type="text" id="child2" name="child2" class="form-control">
                                     </div>
                                 </div>
                             </div>
@@ -345,305 +237,16 @@
                     </div>
                     <div class="column-6">
                         <div class="common-form-wrapper">
-                            <h2 class="common-title">DESCRIPTION OF STAY</h2>
+                            <h2 class="common-title">PRESENTATION</h2>
                             <div class="form-content">
                                 <div class="form-group">
-                                    <label for="country" class="form-group--label">Type of stay <sup>*</sup> :</label>
-                                    <div class="form-group--control">
-                                        <select name="country" id="country" class="form-control form-control--select">
-                                            <option selected disabled>Sélectionner</option>
-                                            <option>Mer</option>
-                                            <option>Montagne</option>
-                                            <option>Campagne</option>
-                                            <option>Ville</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Comment :</label>
-                                    <div class="form-group--control">
-                                        <textarea name="comment" id="comment" class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group show-currency">
-                                    <label for="donate" class="form-group--label">Number of rooms :</label>
-                                    <div class="form-group--control">
-                                        <input type="text" name="donate" id="donate" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Hotel reserved exclusively for the
-                                        stay :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-radio-inline">
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption"
-                                                    id="radioOption">
-                                                <label for="radioOption" class="form-radio--label">Yes</label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption"
-                                                    id="radioOption1">
-                                                <label for="radioOption1" class="form-radio--label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Outdoor pool <sup>*</sup> :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-radio-inline">
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption1"
-                                                    id="radioOption2">
-                                                <label for="radioOption2" class="form-radio--label">Yes</label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption1"
-                                                    id="radioOption3">
-                                                <label for="radioOption3" class="form-radio--label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Separate hours <sup>*</sup> :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-radio-inline">
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption2"
-                                                    id="radioOption4">
-                                                <label for="radioOption4" class="form-radio--label">Yes</label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption2"
-                                                    id="radioOption5">
-                                                <label for="radioOption5" class="form-radio--label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Indoor pool <sup>*</sup> :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-radio-inline">
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption3"
-                                                    id="radioOption6">
-                                                <label for="radioOption6" class="form-radio--label">Yes</label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption3"
-                                                    id="radioOption7">
-                                                <label for="radioOption7" class="form-radio--label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Spa <sup>*</sup> :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-radio-inline">
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption4"
-                                                    id="radioOption8">
-                                                <label for="radioOption8" class="form-radio--label">Yes</label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption4"
-                                                    id="radioOption9">
-                                                <label for="radioOption9" class="form-radio--label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Jacuzzi :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-radio-inline">
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption5"
-                                                    id="radioOption10">
-                                                <label for="radioOption10" class="form-radio--label">Yes</label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption5"
-                                                    id="radioOption11">
-                                                <label for="radioOption11" class="form-radio--label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Fitness room :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-radio-inline">
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption6"
-                                                    id="radioOption12">
-                                                <label for="radioOption12" class="form-radio--label">Yes</label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption6"
-                                                    id="radioOption13">
-                                                <label for="radioOption13" class="form-radio--label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Activities :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-checkbox">
-                                            <input type="checkbox" class="form-checkbox--input" name="tennis"
-                                                id="tennis">
-                                            <label for="tennis" class="form-checkbox--label">Tennis</label>
-                                        </div>
-                                        <div class="form-checkbox">
-                                            <input type="checkbox" class="form-checkbox--input" name="pool" id="pool">
-                                            <label for="pool" class="form-checkbox--label">Pool</label>
-                                        </div>
-                                        <div class="form-checkbox">
-                                            <input type="checkbox" class="form-checkbox--input" name="vollyball"
-                                                id="vollyball">
-                                            <label for="vollyball" class="form-checkbox--label">Vollyball</label>
-                                        </div>
-                                        <div class="form-checkbox">
-                                            <input type="checkbox" class="form-checkbox--input" name="lake" id="lake">
-                                            <label for="lake" class="form-checkbox--label">Lake</label>
-                                        </div>
-                                        <div class="form-checkbox">
-                                            <input type="checkbox" class="form-checkbox--input" name="sea" id="sea">
-                                            <label for="sea" class="form-checkbox--label">Sea</label>
-                                        </div>
-                                        <div class="form-checkbox">
-                                            <input type="checkbox" class="form-checkbox--input" name="pingpong"
-                                                id="pingpong">
-                                            <label for="pingpong" class="form-checkbox--label">Ping-pong</label>
-                                        </div>
-                                        <div class="form-checkbox">
-                                            <input type="checkbox" class="form-checkbox--input" name="billiards"
-                                                id="billiards">
-                                            <label for="billiards" class="form-checkbox--label">Billiards</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Other :</label>
-                                    <div class="form-group--control">
-                                        <input type="text" class="form-control mb-1">
-                                        <input type="text" class="form-control mb-1">
-                                        <input type="text" class="form-control mb-1">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Close to the sea <sup>*</sup>
-                                        :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-radio-inline">
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption7"
-                                                    id="radioOption14">
-                                                <label for="radioOption14" class="form-radio--label">Yes</label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption7"
-                                                    id="radioOption15">
-                                                <label for="radioOption15" class="form-radio--label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">If yes, how many km :</label>
-                                    <div class="form-group--control">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Close to the mountains <sup>*</sup>
-                                        :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-radio-inline">
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption8"
-                                                    id="radioOption16">
-                                                <label for="radioOption16" class="form-radio--label">Yes</label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption8"
-                                                    id="radioOption17">
-                                                <label for="radioOption17" class="form-radio--label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">If yes, how many km :</label>
-                                    <div class="form-group--control">
-                                        <input type="text" class="form-control">
-                                    </div>
+                                    <textarea name="presentation" id="presentation" class="form-control"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="common-form-wrapper">
-                            <h2 class="common-title">ADDITIONAL INFORMATIONS</h2>
-                            <div class="form-content">
-                                <div class="form-group">
-                                    <div class="form-group--top">Under strict kashrut supervision (achgara) :</div>
-                                    <label for="meat" class="form-group--label">Meat :</label>
-                                    <div class="form-group--control">
-                                        <select name="meat" class="form-control form-control--select">
-                                            <option selected disabled>Sélectionner</option>
-                                            <option>Beth din</option>
-                                            <option>Glatt</option>
-                                            <option>Halakbeth Yossef</option>
-                                            <option>Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">If Beth Din, which one ?</label>
-                                    <div class="form-group--control">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">If Other</label>
-                                    <div class="form-group--control">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Halav Israël :</label>
-                                    <div class="form-group--control">
-                                        <div class="form-radio-inline">
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption9"
-                                                    id="radioOption18">
-                                                <label for="radioOption18" class="form-radio--label">Yes</label>
-                                            </div>
-                                            <div class="form-radio">
-                                                <input type="radio" class="form-radio--input" name="radioOption9"
-                                                    id="radioOption19">
-                                                <label for="radioOption19" class="form-radio--label">No</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="comment" class="form-group--label">Rabani present during the stays
-                                        :</label>
-                                    <div class="form-group--control">
-                                        <input type="text" class="form-control mb-1">
-                                        <input type="text" class="form-control mb-1">
-                                        <input type="text" class="form-control mb-1">
-                                    </div>
-                                </div>
-                                <h3 class="form-group-divider fw-bold text-primary">Schedules of Téfilot * :</h3>
-                                <br>
+                            <h2 class="common-title">TEFILA</h2>
+                            <div class="form-content pt-3">
                                 <div class="form-group form-group--check">
                                     <div class="form-group--label">
                                         <div class="form-checkbox">
@@ -718,14 +321,31 @@
                                 </div>
                                 <br>
                                 <div class="form-group">
-                                    <label for="celebrations" class="form-group--label">Rites *</label>
+                                    <label for="celebrations" class="form-group--label">Rites <sup>*</sup></label>
                                     <div class="form-group--control">
                                         <select name="celebrations" class="form-control form-control--select">
                                             <option selected disabled>Select a rite</option>
                                             <option>Sephardic</option>
                                             <option>Ashkenazi</option>
-                                            <option>Habad</option>
                                         </select>
+                                    </div>
+                                </div>
+                                <div class="form-group my-3">
+                                    <label for="celebrations" class="form-group--label">Movement <sup>*</sup></label>
+                                    <div class="form-group--control">
+                                        <div class="form-radio mb-3">
+                                            <input type="radio" class="form-radio--input" name="movement"
+                                                id="constistorial">
+                                            <label for="constistorial" class="form-radio--label">Constistorial</label>
+                                        </div>
+                                        <div class="form-radio mb-3">
+                                            <input type="radio" class="form-radio--input" name="movement" id="orthodox">
+                                            <label for="orthodox" class="form-radio--label">Orthodox</label>
+                                        </div>
+                                        <div class="form-radio">
+                                            <input type="radio" class="form-radio--input" name="movement" id="habad">
+                                            <label for="habad" class="form-radio--label">Habad</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group form-group--check">
@@ -747,10 +367,1370 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">SHABBAT</h2>
+                            <div class="form-content pt-3">
+                                <div class="form-group form-group--check">
+                                    <div class="form-group--label">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="shabbatChaharit"
+                                                id="shabbatChaharit">
+                                            <label for="shabbatChaharit" class="form-checkbox--label">Shabbat Chaharit
+                                                :</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group--control">
+                                        <input type="time" name="shabbatChaharitTime" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group--check">
+                                    <div class="form-group--label">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="shabbatMinh"
+                                                id="shabbatMinh">
+                                            <label for="shabbatMinh" class="form-checkbox--label">Shabbat Minh'a
+                                                :</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group--control">
+                                        <input type="time" name="shabbatMinhTime" class="form-control">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group form-group--check">
+                                    <div class="form-group--label">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="shabbatArvit"
+                                                id="shabbatArvit">
+                                            <label for="shabbatArvit" class="form-checkbox--label">Shabbat Arvit
+                                                :</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group--control">
+                                        <input type="time" name="shabbatArvitTime" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="column-12">
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">CLASSES</h2>
+                            <div class="form-content mb-3">
+                                <div class="form-group">
+                                    <div class="form-group--top">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="checkALlWomen"
+                                                id="checkALlWomen">
+                                            <label for="checkALlWomen" class="form-checkbox--label">Classes for
+                                                women</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline-controls pl-4">
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wMonday"
+                                                    id="wMonday">
+                                                <label for="wMonday" class="form-checkbox--label">Monday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wMonday"
+                                                    id="wTuesday">
+                                                <label for="wTuesday" class="form-checkbox--label">Tuesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wWednesday"
+                                                    id="wWednesday">
+                                                <label for="wWednesday" class="form-checkbox--label">Wednesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wThursday"
+                                                    id="wThursday">
+                                                <label for="wThursday" class="form-checkbox--label">Thursday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wFriday"
+                                                    id="wFriday">
+                                                <label for="wFriday" class="form-checkbox--label">Friday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wSaturday"
+                                                    id="wSaturday">
+                                                <label for="wSaturday" class="form-checkbox--label">Saturday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wSunday"
+                                                    id="wSunday">
+                                                <label for="wSunday" class="form-checkbox--label">Sunday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-content">
+                                <div class="form-group">
+                                    <div class="form-group--top">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input" name="checkALlMen"
+                                                id="checkALlMen">
+                                            <label for="checkALlMen" class="form-checkbox--label">Classes for
+                                                men</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline-controls pl-4">
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mMonday"
+                                                    id="mMonday">
+                                                <label for="mMonday" class="form-checkbox--label">Monday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mTuesday"
+                                                    id="mTuesday">
+                                                <label for="mTuesday" class="form-checkbox--label">Tuesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mWednesday"
+                                                    id="mWednesday">
+                                                <label for="mWednesday" class="form-checkbox--label">Wednesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mThursday"
+                                                    id="mThursday">
+                                                <label for="mThursday" class="form-checkbox--label">Thursday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mFriday"
+                                                    id="mFriday">
+                                                <label for="mFriday" class="form-checkbox--label">Friday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mSaturday"
+                                                    id="mSaturday">
+                                                <label for="mSaturday" class="form-checkbox--label">Saturday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mSunday"
+                                                    id="mSunday">
+                                                <label for="mSunday" class="form-checkbox--label">Sunday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--text d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Title : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner`">
+                                                <div class="d-flex align-items-center input-text">
+                                                    <label class="inline-column--label">Speaker : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="column-12">
+                        <div class="common-form-wrapper">
+                            <h2 class="common-title">MIKVEH</h2>
+                            <div class="form-content mb-3">
+                                <div class="form-group">
+                                    <div class="form-group--top">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input"
+                                                name="checkALlMikvehWomen" id="checkALlMikvehWomen">
+                                            <label for="checkALlMikvehWomen" class="form-checkbox--label">Mikveh for
+                                                women</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline-controls pl-4">
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wMonday"
+                                                    id="wMonday">
+                                                <label for="wMonday" class="form-checkbox--label">Monday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wMonday"
+                                                    id="wTuesday">
+                                                <label for="wTuesday" class="form-checkbox--label">Tuesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wWednesday"
+                                                    id="wWednesday">
+                                                <label for="wWednesday" class="form-checkbox--label">Wednesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wThursday"
+                                                    id="wThursday">
+                                                <label for="wThursday" class="form-checkbox--label">Thursday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wFriday"
+                                                    id="wFriday">
+                                                <label for="wFriday" class="form-checkbox--label">Friday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wSaturday"
+                                                    id="wSaturday">
+                                                <label for="wSaturday" class="form-checkbox--label">Saturday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="wSunday"
+                                                    id="wSunday">
+                                                <label for="wSunday" class="form-checkbox--label">Sunday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline-column-wrap mt-2 form-group mb-0 d-flex align-items-center">
+                                    <div class="inline-column w-100 fw-100 inline-column--text d-flex align-items-center">
+                                        <div class="inline-column--inner">
+                                            <div class="d-flex align-items-center input-time">
+                                                <label class="inline-column--label">Manager : </label>
+                                                <div class="inline-column--control">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-content mb-3">
+                                <div class="form-group">
+                                    <div class="form-group--top">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input"
+                                                name="checkALlMikvehkelims" id="checkALlMikvehkelims">
+                                            <label for="checkALlMikvehkelims" class="form-checkbox--label">Mikveh for men</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline-controls pl-4">
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mMonday"
+                                                    id="mMonday">
+                                                <label for="mMonday" class="form-checkbox--label">Monday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mTuesday"
+                                                    id="mTuesday">
+                                                <label for="mTuesday" class="form-checkbox--label">Tuesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mWednesday"
+                                                    id="mWednesday">
+                                                <label for="mWednesday" class="form-checkbox--label">Wednesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mThursday"
+                                                    id="mThursday">
+                                                <label for="mThursday" class="form-checkbox--label">Thursday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mFriday"
+                                                    id="mFriday">
+                                                <label for="mFriday" class="form-checkbox--label">Friday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mSaturday"
+                                                    id="mSaturday">
+                                                <label for="mSaturday" class="form-checkbox--label">Saturday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="mSunday"
+                                                    id="mSunday">
+                                                <label for="mSunday" class="form-checkbox--label">Sunday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline-column-wrap mt-2 form-group mb-0 d-flex align-items-center">
+                                    <div class="inline-column w-100 fw-100 inline-column--text d-flex align-items-center">
+                                        <div class="inline-column--inner">
+                                            <div class="d-flex align-items-center input-time">
+                                                <label class="inline-column--label">Manager : </label>
+                                                <div class="inline-column--control">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-content mb-3">
+                                <div class="form-group">
+                                    <div class="form-group--top">
+                                        <div class="form-checkbox">
+                                            <input type="checkbox" class="form-checkbox--input"
+                                                name="checkALlMikvehkelims" id="checkALlMikvehkelims">
+                                            <label for="checkALlMikvehkelims" class="form-checkbox--label">Mikveh for kelims</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline-controls pl-4">
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="kMonday"
+                                                    id="kMonday">
+                                                <label for="kMonday" class="form-checkbox--label">Monday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="kTuesday"
+                                                    id="kTuesday">
+                                                <label for="kTuesday" class="form-checkbox--label">Tuesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="kWednesday"
+                                                    id="kWednesday">
+                                                <label for="kWednesday" class="form-checkbox--label">Wednesday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="kThursday"
+                                                    id="kThursday">
+                                                <label for="kThursday" class="form-checkbox--label">Thursday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="kFriday"
+                                                    id="kFriday">
+                                                <label for="kFriday" class="form-checkbox--label">Friday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="kSaturday"
+                                                    id="kSaturday">
+                                                <label for="kSaturday" class="form-checkbox--label">Saturday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="inline-column-wrap form-group mb-0 d-flex align-items-center">
+                                        <div class="inline-column inline-column--checkbox">
+                                            <div class="form-checkbox mb-0">
+                                                <input type="checkbox" class="form-checkbox--input" name="kSunday"
+                                                    id="kSunday">
+                                                <label for="kSunday" class="form-checkbox--label">Sunday</label>
+                                            </div>
+                                        </div>
+                                        <div class="inline-column inline-column--time d-flex align-items-center">
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">From : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="inline-column--inner">
+                                                <div class="d-flex align-items-center input-time">
+                                                    <label class="inline-column--label">To : </label>
+                                                    <div class="inline-column--control">
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline-column-wrap mt-2 form-group mb-0 d-flex align-items-center">
+                                    <div class="inline-column w-100 fw-100 inline-column--text d-flex align-items-center">
+                                        <div class="inline-column--inner">
+                                            <div class="d-flex align-items-center input-time">
+                                                <label class="inline-column--label">Manager : </label>
+                                                <div class="inline-column--control">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="page-form-action text-center">
-                    <button type="submit" name="submit" class="btn btn-primary btn-vacation">View my Official Minyan
+                    <button type="submit" name="submit" class="btn btn-primary btn-official">View my Official Minyan
                         creation before confirming</button>
                 </div>
             </form>
