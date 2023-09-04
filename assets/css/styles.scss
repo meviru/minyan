@@ -1463,6 +1463,22 @@ textarea {
             }
         }
     }
+    .success,
+    .failed {
+        width: 400px;
+        margin: 15px auto;
+        padding: 10px 15px;
+        border-radius: 5px;
+        max-width: 100%;
+    }
+    .success {
+        color: #049c37;
+        background: #c5ffbc;
+    }
+    .failed {
+        color: #9c0404;
+        background: #ffbcbc;
+    }
 }
 
 // Login form
@@ -2244,6 +2260,15 @@ textarea {
             &--bottom {
                 margin-top: 15px;
                 justify-content: space-between;
+            }
+        }
+    }
+
+    .register-form-wrapper,
+    .login-form-wrapper {
+        .form-action {
+            .btn {
+                margin-right: 30px;
             }
         }
     }

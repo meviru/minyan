@@ -1661,6 +1661,26 @@ textarea.form-control {
 .login-form-wrapper .form-action .btn:last-child {
   margin-right: 0;
 }
+.register-form-wrapper .success,
+.register-form-wrapper .failed,
+.login-form-wrapper .success,
+.login-form-wrapper .failed {
+  width: 400px;
+  margin: 15px auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+  max-width: 100%;
+}
+.register-form-wrapper .success,
+.login-form-wrapper .success {
+  color: #049c37;
+  background: #c5ffbc;
+}
+.register-form-wrapper .failed,
+.login-form-wrapper .failed {
+  color: #9c0404;
+  background: #ffbcbc;
+}
 
 .login-form-wrapper {
   padding: 45px 65px;
@@ -2286,6 +2306,10 @@ textarea.form-control {
   .login-form-wrapper .form-action--bottom {
     margin-top: 15px;
     justify-content: space-between;
+  }
+  .register-form-wrapper .form-action .btn,
+  .login-form-wrapper .form-action .btn {
+    margin-right: 30px;
   }
 }
 @media screen and (max-width: 340px) {
