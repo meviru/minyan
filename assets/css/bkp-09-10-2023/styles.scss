@@ -345,17 +345,6 @@ button {
             border-right: 25px solid transparent;
             border-bottom: 30px solid $primary;
         }
-        &.user-loggedin-details {
-            width: 185px;
-            left: -59px;
-        }
-    }
-
-    .user-name {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: $font-size-base * 0.875;
     }
 
     &--btn {
@@ -491,7 +480,7 @@ button {
 // Search Bar
 .search-wrapper {
     position: absolute;
-    bottom: 100px;
+    bottom: 62px;
     left: 0;
     right: 0;
     z-index: 4;
@@ -1972,9 +1961,6 @@ textarea {
 
         &--dropdown {
             left: -44px;
-            &.user-loggedin-details {
-                left: -64px;
-            }
         }
     }
 
@@ -2125,9 +2111,6 @@ textarea {
 
         &--dropdown {
             left: -52px;
-            &.user-loggedin-details {
-                left: -72px;
-            }
         }
     }
 
@@ -2171,7 +2154,7 @@ textarea {
     }
 
     .search-wrapper {
-        bottom: 30px;
+        bottom: 20px;
     }
 
     .search-bar {

@@ -622,16 +622,6 @@ button {
   border-right: 25px solid transparent;
   border-bottom: 30px solid #2aa9e3;
 }
-.user-menu--dropdown.user-loggedin-details {
-  width: 185px;
-  left: -59px;
-}
-.user-menu .user-name {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 14px;
-}
 .user-menu--btn {
   font-family: "Inter", "Roboto", sans-serif;
   font-weight: 700;
@@ -749,7 +739,7 @@ button {
 
 .search-wrapper {
   position: absolute;
-  bottom: 100px;
+  bottom: 62px;
   left: 0;
   right: 0;
   z-index: 4;
@@ -2100,9 +2090,6 @@ textarea.form-control {
   .user-menu--dropdown {
     left: -44px;
   }
-  .user-menu--dropdown.user-loggedin-details {
-    left: -64px;
-  }
   .create-minyan {
     position: relative;
     padding-right: 10px;
@@ -2209,9 +2196,6 @@ textarea.form-control {
   .user-menu--dropdown {
     left: -52px;
   }
-  .user-menu--dropdown.user-loggedin-details {
-    left: -72px;
-  }
   .right-menu {
     align-items: center;
   }
@@ -2243,7 +2227,7 @@ textarea.form-control {
     margin-top: 20px;
   }
   .search-wrapper {
-    bottom: 30px;
+    bottom: 20px;
   }
   .search-bar--input {
     height: 60px;
