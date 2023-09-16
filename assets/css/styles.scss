@@ -134,6 +134,17 @@ button {
 .text-vacation-color {
     color: $vacation-minyan !important;
 }
+.bg-official {
+    background-color: lighten($official-minyan, 25%) !important;
+}
+
+.bg-private {
+    background-color: lighten($private-minyan, 25%) !important;
+}
+
+.bg-vacation {
+    background-color: lighten($vacation-minyan, 10%) !important;
+}
 
 .text-left {
     text-align: left !important;
@@ -1427,6 +1438,42 @@ textarea {
 }
 
 .form-radio {
+    &--official {
+        color: $official-minyan;
+        .form-radio--label {
+            &:before {
+                border-color: $official-minyan !important;
+            }
+            &:after {
+                background-color: $official-minyan;
+            }
+        }
+    }
+    &--private {
+        color: $private-minyan;
+        .form-radio--label {
+            &:before {
+                border-color: $private-minyan !important;
+            }
+            &:after {
+                background-color: $private-minyan;
+            }
+        }
+    }
+    &--vacation {
+        color: $vacation-minyan;
+        .form-radio--label {
+            &:before {
+                border-color: $vacation-minyan !important;
+            }
+            &:after {
+                background-color: $vacation-minyan;
+            }
+        }
+    }
+}
+
+.form-radio {
     padding-left: 28px;
     &--label {
         &:before {
@@ -1836,6 +1883,238 @@ textarea {
     }
 }
 // End - Verify Screen
+
+// Start - Search Screen
+.filter-item {
+    &--label {
+        font-size: $font-size-base * 1.5;
+        font-weight: bold;
+        color: $primary;
+        display: block;
+    }
+    &--search {
+        width: 464px;
+        max-width: 100%;
+    }
+    &--date {
+        margin: 0 70px;
+    }
+    &--input {
+        font-size: $font-size-base * 1.375;
+        font-weight: normal;
+        height: 47px;
+        color: $primary;
+        border-radius: 4px;
+        padding: 5px 15px;
+        border: 0.5px solid $border-color;
+        box-shadow: 4px 4px 8px 0px rgba($black, 0.4);
+        &::-webkit-input-placeholder {
+            color: rgba(#0058c8, 0.5);
+        }
+
+        &:-ms-input-placeholder {
+            color: rgba(#0058c8, 0.5);
+        }
+
+        &::placeholder {
+            color: rgba(#0058c8, 0.5);
+        }
+    }
+    &--btn {
+        font-size: $font-size-base * 1.375;
+        font-weight: normal;
+        height: 42px;
+        padding: 5px 10px;
+        width: 123px;
+        max-width: 100%;
+        color: $primary-dark;
+        border-radius: 4px;
+        border: 0.5px solid $border-color;
+        box-shadow: 4px 4px 8px 0px rgba($black, 0.4);
+        svg {
+            fill: $primary-dark;
+        }
+    }
+}
+.bottom-filters {
+    .form-radio {
+        width: 160px;
+        max-width: 100%;
+        &--label {
+            font-size: $font-size-base * 1.5 !important;
+            font-weight: bold !important;
+            &:before {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:after {
+                inset: 0;
+                margin: auto;
+                margin-left: 4.5px;
+            }
+        }
+    }
+}
+
+.filter-results {
+    .result-desc {
+        font-size: $font-size-base * 1.5;
+    }
+}
+
+.view-on-map {
+    font-size: $font-size-base * 1.5;
+    &--img {
+        width: 50px;
+    }
+}
+
+.results-wrapper {
+    .row {
+        display: flex;
+        margin: 0 0;
+    }
+    .column-6 {
+        padding: 0;
+    }
+}
+
+.result-items {
+    .result-item {
+        padding: 10px 14px;
+        margin-bottom: 7px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &--card {
+            position: relative;
+            border-radius: 15px;
+            padding: 28px 34px;
+            background-color: $white;
+            border: 2px solid $border-color;
+            box-shadow: 6px 6px 6px 0px rgba($black, 0.4);
+        }
+        &--fav {
+            position: absolute;
+            right: 34px;
+            top: 34px;
+            z-index: 2;
+            cursor: pointer;
+        }
+        &--title {
+            font-size: $font-size-base * 2.125;
+            margin-bottom: 18px;
+            padding-right: 50px;
+        }
+        &--details {
+            font-size: $font-size-base * 1.5;
+            color: $primary;
+            width: 235px;
+            max-width: 100%;
+            line-height: $font-size-base * 2.25;
+        }
+        &--action {
+            margin-top: 12px;
+            .btn {
+                cursor: pointer;
+                height: 55px;
+                width: 132px;
+                max-width: 100%;
+            }
+        }
+        &.bg-official {
+            .result-item--card {
+                border-color: darken($official-minyan, 10%);
+            }
+            .result-item--title {
+                color: $official-minyan;
+            }
+            .btn {
+                color: $official-minyan;
+                border-color: darken($official-minyan, 10%);
+                &:hover {
+                    color: $white;
+                    background-color: $official-minyan;
+                }
+            }
+        }
+        &.bg-private {
+            .result-item--card {
+                border-color: darken($private-minyan, 10%);
+            }
+            .result-item--title {
+                color: $private-minyan;
+            }
+            .btn {
+                color: $private-minyan;
+                border-color: darken($private-minyan, 10%);
+                &:hover {
+                    color: $white;
+                    background-color: $private-minyan;
+                }
+            }
+        }
+        &.bg-vacation {
+            .result-item--card {
+                border-color: darken($vacation-minyan, 10%);
+            }
+            .result-item--title {
+                color: $vacation-minyan;
+            }
+            .btn {
+                color: $vacation-minyan;
+                border-color: darken($vacation-minyan, 10%);
+                &:hover {
+                    color: $white;
+                    background-color: $vacation-minyan;
+                }
+            }
+        }
+    }
+}
+
+.users-list {
+    position: absolute;
+    bottom: 25px;
+    right: 34px;
+    z-index: 2;
+    &-item {
+        margin-right: 12px;
+        &:last-child {
+            margin-right: 0;
+        }
+        svg {
+            display: block;
+        }
+    }
+}
+
+.iframe-wrapper {
+    height: 100%;
+    .iframe-content {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.pagination {
+    &-item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &-link {
+        font-size: $font-size-base * 1.5;
+        display: block;
+        color: $primary;
+        &.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}
+// End - Search Screen
 
 // Responsive
 @media screen and (max-width: 1280px) {
