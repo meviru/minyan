@@ -41,4 +41,9 @@ jQuery(document).ready(function () {
     jQuery("#slider-3").slick(config);
 
     jQuery("#slider-4").slick(config);
+
+    jQuery(".m-accordion--title").click(function () {
+        jQuery(this).parent().siblings().children(".m-accordion--desc").slideUp(300);
+        jQuery(this).siblings(".m-accordion--desc").stop().slideToggle(300);
+    })
 });
