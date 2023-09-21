@@ -2245,9 +2245,68 @@ textarea {
     &--desc {
         padding: 0 10px 20px;
         display: none;
+        &.active {
+            display: block;
+        }
     }
     .text-desc {
         font-size: $font-size-base * 2;
+    }
+}
+
+.inline-cards {
+    .row {
+        display: flex;
+        &.mw-90 {
+            width: 90%;
+            margin: 0 auto;
+        }
+        &.three-column {
+            margin: 0 -15px;
+        }
+    }
+    .column-4 {
+        padding: 0 15px;
+    }
+    .card {
+        padding: 25px;
+        overflow: hidden;
+        border-radius: 40px;
+        border: 2px solid rgba($border-color, 0.5);
+        box-shadow: 0px 0px 10px -2px rgba($black, 0.2);
+        &--title {
+            font-size: $font-size-base * 2;
+            color: $primary-dark;
+            margin-bottom: 12px;
+        }
+        &--table {
+            td {
+                font-size: $font-size-base * 1.625;
+                color: $primary-dark;
+                padding-bottom: 5px;
+                & + td {
+                    padding-left: 20px;
+                    color: $primary;
+                }
+                &.day-name {
+                    width: 140px;
+                }
+            }
+        }
+    }
+    &.fs-small {
+        .card--title {
+            font-size: $font-size-base * 1.5;
+        }
+        .card--table {
+            td {
+                font-size: $font-size-base * 1.25;
+                padding-bottom: 10px;
+                &.day-name {
+                    width: 110px;
+                }
+            }
+        }
     }
 }
 // End - Search Detail Screen
