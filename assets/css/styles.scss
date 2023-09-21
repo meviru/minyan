@@ -2284,12 +2284,20 @@ textarea {
                 font-size: $font-size-base * 1.625;
                 color: $primary-dark;
                 padding-bottom: 5px;
+                vertical-align: top;
                 & + td {
                     padding-left: 20px;
                     color: $primary;
                 }
                 &.day-name {
                     width: 140px;
+                }
+            }
+            tr {
+                &:last-child {
+                    td {
+                        padding-bottom: 0;
+                    }
                 }
             }
         }
@@ -2305,6 +2313,29 @@ textarea {
                 &.day-name {
                     width: 110px;
                 }
+                &.label {
+                    width: 210px;
+                }
+            }
+        }
+    }
+    .block-title {
+        color: $primary-dark;
+        font-size: $font-size-base * 1.5;
+    }
+    .block {
+        &--list {
+            list-style: disc;
+            list-style-position: inside;
+            font-size: $font-size-base * 1.1875;
+        }
+    }
+    .block-info {
+        font-size: $font-size-base * 1.25;
+        &--item {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }

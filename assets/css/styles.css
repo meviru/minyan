@@ -2411,6 +2411,7 @@ textarea.form-control {
   font-size: 26px;
   color: #097cb0;
   padding-bottom: 5px;
+  vertical-align: top;
 }
 .inline-cards .card--table td + td {
   padding-left: 20px;
@@ -2418,6 +2419,9 @@ textarea.form-control {
 }
 .inline-cards .card--table td.day-name {
   width: 140px;
+}
+.inline-cards .card--table tr:last-child td {
+  padding-bottom: 0;
 }
 .inline-cards.fs-small .card--title {
   font-size: 24px;
@@ -2428,6 +2432,27 @@ textarea.form-control {
 }
 .inline-cards.fs-small .card--table td.day-name {
   width: 110px;
+}
+.inline-cards.fs-small .card--table td.label {
+  width: 210px;
+}
+.inline-cards .block-title {
+  color: #097cb0;
+  font-size: 24px;
+}
+.inline-cards .block--list {
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 19px;
+}
+.inline-cards .block-info {
+  font-size: 20px;
+}
+.inline-cards .block-info--item {
+  margin-bottom: 10px;
+}
+.inline-cards .block-info--item:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 1280px) {
