@@ -1834,7 +1834,7 @@ textarea {
 // Start - Verify Screen
 .verify-screen-wrapper {
     .common-form-wrapper {
-        border-color: $primary-dark;
+        border-color: $border-color;
     }
 }
 
@@ -1889,6 +1889,9 @@ textarea {
         color: $primary;
         justify-content: center;
         border: 1px solid $border-color;
+        &.w-auto {
+            width: auto;
+        }
     }
 }
 // End - Verify Screen
@@ -2020,6 +2023,7 @@ textarea {
             color: $primary;
             width: 235px;
             max-width: 100%;
+            min-height: 150px;
             line-height: $font-size-base * 2.25;
         }
         &--action {
@@ -2100,9 +2104,11 @@ textarea {
 
 .iframe-wrapper {
     height: 100%;
-    .iframe-content {
-        width: 100%;
-        height: 100%;
+    .iframe-content,
+    #map {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
     }
 }
 
@@ -2289,6 +2295,7 @@ textarea {
             margin-bottom: 12px;
         }
         &--table {
+            width: 100%;
             td {
                 font-size: $font-size-base * 1.625;
                 color: $primary-dark;
@@ -2328,6 +2335,29 @@ textarea {
             }
         }
     }
+    &.fs-normal {
+        .card--title {
+            font-size: $font-size-base * 0.9375;
+        }
+        .card--table {
+            td {
+                font-size: $font-size-base * 0.9375;
+                padding-bottom: 10px;
+                & + td {
+                    padding-left: 5px;
+                }
+                &.day-name {
+                    width: 90px;
+                }
+                &.label {
+                    width: 210px;
+                }
+            }
+        }
+        .block--list {
+            font-size: $font-size-base * .9375;
+        }
+    }
     .block-title {
         color: $primary-dark;
         font-size: $font-size-base * 1.5;
@@ -2347,6 +2377,10 @@ textarea {
                 margin-bottom: 0;
             }
         }
+    }
+    
+    .border-left {
+        border-left: 1px solid $primary-dark;
     }
 }
 // End - Search Detail Screen
