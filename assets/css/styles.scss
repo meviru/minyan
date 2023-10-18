@@ -53,38 +53,35 @@ button {
 
 @mixin simpleSpace {
     // margin and padding values
-    $spacings: (0, 0.25rem, 0.5rem, 1rem, 1.5rem, 2rem) !default;
+    $spacings: (
+        0,
+        0.25rem,
+        0.5rem,
+        1rem,
+        1.5rem,
+        2rem) !default;
 
     // margin and padding shorthand prefixes
     $prefixes: (
         p: padding,
-        px: (
-            padding-left,
-            padding-right
-        ),
-        py: (
-            padding-top,
-            padding-bottom
-        ),
+        px: (padding-left,
+            padding-right),
+        py: (padding-top,
+            padding-bottom),
         pt: padding-top,
         pr: padding-right,
         pb: padding-bottom,
         pl: padding-left,
 
         m: margin,
-        mx: (
-            margin-left,
-            margin-right
-        ),
-        my: (
-            margin-top,
-            margin-bottom
-        ),
+        mx: (margin-left,
+            margin-right),
+        my: (margin-top,
+            margin-bottom),
         mt: margin-top,
         mr: margin-right,
         mb: margin-bottom,
-        ml: margin-left
-    ) !default;
+        ml: margin-left) !default;
 
     // Loop generating all spacing styles
     @each $attr-short, $attr-list in $prefixes {
@@ -98,7 +95,8 @@ button {
     }
 }
 
-@include simpleSpace();
+@include simpleSpace(
+);
 
 .container {
     width: 1250px;
@@ -134,6 +132,7 @@ button {
 .text-vacation-color {
     color: $vacation-minyan !important;
 }
+
 .bg-official {
     background-color: lighten($official-minyan, 25%) !important;
 }
@@ -217,6 +216,7 @@ button {
             background-color: lighten($official-minyan, 5%);
         }
     }
+
     &.btn-private {
         color: $white;
         border-color: $private-minyan;
@@ -228,6 +228,7 @@ button {
             background-color: lighten($private-minyan, 10%);
         }
     }
+
     &.btn-vacation {
         color: $white;
         border-color: $vacation-minyan;
@@ -262,6 +263,7 @@ button {
 .fs-medium {
     font-size: $font-size-base * 1.5;
 }
+
 .fs-small {
     font-size: $font-size-base * 0.875;
 }
@@ -356,6 +358,7 @@ button {
             border-right: 25px solid transparent;
             border-bottom: 30px solid $primary;
         }
+
         &.user-loggedin-details {
             width: 185px;
             left: -59px;
@@ -380,7 +383,7 @@ button {
         transition: 0.25s ease;
         background-color: $primary-light;
 
-        & + .user-menu--btn {
+        &+.user-menu--btn {
             margin-top: 16px;
         }
 
@@ -431,7 +434,7 @@ button {
     background-color: $primary-dark;
 
     &--item {
-        & + .lang-dropdown--item {
+        &+.lang-dropdown--item {
             margin-top: 17px;
         }
     }
@@ -486,6 +489,7 @@ button {
     color: $white;
     display: none;
     text-shadow: 0px 4px 4px rgba($black, 0.3);
+
     .home & {
         display: block;
     }
@@ -698,6 +702,7 @@ button {
                 cursor: pointer;
                 border-radius: 50%;
                 background-color: rgba(#cac9c9, 0.7);
+
                 &::after {
                     position: absolute;
                     content: "";
@@ -780,7 +785,7 @@ button {
     justify-content: center;
 
     li {
-        & + li {
+        &+li {
             margin-left: 15px;
         }
 
@@ -990,6 +995,7 @@ button {
 
     .column-6 {
         margin-top: 10px;
+
         &:nth-child(2) {
             padding-left: 60px;
 
@@ -997,8 +1003,10 @@ button {
                 padding-left: 10px;
             }
         }
+
         @media screen and (max-width: 767px) {
             margin-top: 0;
+
             &:not(:first-child) {
                 margin-top: 30px;
                 padding-left: 0;
@@ -1182,6 +1190,7 @@ textarea {
         border-radius: 18px;
         transition: 0.25s ease;
         background-color: $primary-dark;
+
         &:hover {
             background-color: darken($primary-dark, 5%);
         }
@@ -1198,26 +1207,31 @@ textarea {
     flex-wrap: wrap;
     margin-bottom: 35px;
     align-items: center;
+
     &-link {
         color: $primary;
         padding: 3px 10px;
         display: inline-block;
     }
+
     &-item {
         font-size: $font-size-base * 1.5;
         font-weight: 600;
         position: relative;
         color: $primary;
+
         &:after {
             content: ">";
             margin-right: 3px;
         }
+
         &:last-child {
             &::after {
                 content: none;
                 display: none;
             }
         }
+
         &.active {
             .breadcrumb-link {
                 color: $white;
@@ -1225,6 +1239,7 @@ textarea {
                 border-radius: 30px;
             }
         }
+
         &:first-child {
             &:not(.active) {
                 .breadcrumb-link {
@@ -1233,10 +1248,13 @@ textarea {
             }
         }
     }
+
     &-top {
         position: relative;
         top: -55px;
+        z-index: 12;
         margin-bottom: 0;
+
         .breadcrumb-item {
             &.active {
                 .breadcrumb-link {
@@ -1244,14 +1262,17 @@ textarea {
                     border-radius: 0;
                     background-color: transparent;
                     border-bottom: 3px solid $primary;
+
                     .official-minyan & {
                         color: $official-minyan;
                         border-bottom-color: $official-minyan;
                     }
+
                     .private-minyan & {
                         color: $private-minyan;
                         border-bottom-color: $private-minyan;
                     }
+
                     .vacation-minyan & {
                         color: $vacation-minyan;
                         border-bottom-color: $vacation-minyan;
@@ -1259,6 +1280,7 @@ textarea {
                 }
             }
         }
+
         .breadcrumb-link {
             font-size: $font-size-base * 1.25;
             padding: 0;
@@ -1276,10 +1298,12 @@ textarea {
     padding: 20px 35px;
     border-radius: 25px;
     border: 2px solid $border-color;
+
     .form-group {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 5px;
+
         &--top {
             flex: 0 0 100%;
             font-size: $font-size-base * 0.9375;
@@ -1288,16 +1312,19 @@ textarea {
             font-weight: bold;
             margin: 10px 0 10px;
         }
+
         &--label {
             flex: 0 0 54%;
             width: 54%;
             font-size: $font-size-base * 0.9375;
             line-height: normal;
         }
+
         &--control {
             flex: 0 0 46%;
             width: 46%;
         }
+
         &--file {
             position: relative;
             border: none;
@@ -1305,6 +1332,7 @@ textarea {
             flex: 0 0 115px;
             max-width: 100%;
             margin: 18px auto 12px;
+
             &-text {
                 font-size: $font-size-base * 0.9375;
                 font-weight: bold;
@@ -1319,37 +1347,44 @@ textarea {
                 background-color: $primary;
             }
         }
+
         &.fw-group {
+
             .form-group--label,
             .form-group--control {
                 flex: 0 0 100%;
                 width: 100%;
                 margin: 0 0 10px 0;
             }
+
             .form-group--file {
                 margin: 0;
             }
+
             .form-control--info {
                 margin-bottom: 0;
                 margin-left: 15px;
                 flex-direction: row;
                 justify-content: start;
+
                 strong {
                     margin-right: 20px;
                 }
             }
         }
     }
+
     .form-control {
         font-size: $font-size-base * 0.9375;
         font-weight: 600;
         color: $primary;
         padding: 5px 8px;
+
         &--select {
             padding: 0 5px;
-            background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZmlsbDogIzJhYTllMzt0cmFuc2Zvcm06IDttc0ZpbHRlcjo7Ij48cGF0aCBkPSJNMTYuMjkzIDkuMjkzIDEyIDEzLjU4NiA3LjcwNyA5LjI5M2wtMS40MTQgMS40MTRMMTIgMTYuNDE0bDUuNzA3LTUuNzA3eiI+PC9wYXRoPjwvc3ZnPg==")
-                no-repeat center right;
+            background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZmlsbDogIzJhYTllMzt0cmFuc2Zvcm06IDttc0ZpbHRlcjo7Ij48cGF0aCBkPSJNMTYuMjkzIDkuMjkzIDEyIDEzLjU4NiA3LjcwNyA5LjI5M2wtMS40MTQgMS40MTRMMTIgMTYuNDE0bDUuNzA3LTUuNzA3eiI+PC9wYXRoPjwvc3ZnPg==") no-repeat center right;
         }
+
         &--file {
             position: relative;
             border: none;
@@ -1359,6 +1394,7 @@ textarea {
             height: 21px;
             width: 100%;
         }
+
         &--info {
             width: 115px;
             margin: 0 auto 20px;
@@ -1368,6 +1404,7 @@ textarea {
             flex-direction: column;
             font-size: $font-size-base * 0.625;
         }
+
         &.mb-1 {
             margin-bottom: 5px;
         }
@@ -1380,27 +1417,33 @@ textarea {
     display: flex;
     padding-left: 20px;
     margin-bottom: 5px;
+
     &--input {
         position: absolute;
         width: 0;
         height: 0;
         opacity: 0;
+
         &:checked {
-            & ~ .form-checkbox--label,
-            & ~ .form-radio--label {
+
+            &~.form-checkbox--label,
+            &~.form-radio--label {
                 &::before {
                     border-color: $primary;
                 }
+
                 &::after {
                     opacity: 1;
                 }
             }
         }
     }
+
     &--label {
         font-size: $font-size-base * 0.875 !important;
         line-height: normal !important;
         font-weight: normal !important;
+
         &:before {
             position: absolute;
             content: "";
@@ -1410,6 +1453,7 @@ textarea {
             left: 0;
             border: 1px solid $border-color;
         }
+
         &:after {
             position: absolute;
             opacity: 0;
@@ -1429,9 +1473,11 @@ textarea {
     margin: 5px 0;
     display: flex;
     align-items: center;
+
     .form-radio {
         margin-bottom: 0;
-        & + .form-radio {
+
+        &+.form-radio {
             margin-left: 25px;
         }
     }
@@ -1440,32 +1486,40 @@ textarea {
 .form-radio {
     &--official {
         color: $official-minyan;
+
         .form-radio--label {
             &:before {
                 border-color: $official-minyan !important;
             }
+
             &:after {
                 background-color: $official-minyan;
             }
         }
     }
+
     &--private {
         color: $private-minyan;
+
         .form-radio--label {
             &:before {
                 border-color: $private-minyan !important;
             }
+
             &:after {
                 background-color: $private-minyan;
             }
         }
     }
+
     &--vacation {
         color: $vacation-minyan;
+
         .form-radio--label {
             &:before {
                 border-color: $vacation-minyan !important;
             }
+
             &:after {
                 background-color: $vacation-minyan;
             }
@@ -1475,6 +1529,7 @@ textarea {
 
 .form-radio {
     padding-left: 28px;
+
     &--label {
         &:before {
             top: -2px;
@@ -1483,6 +1538,7 @@ textarea {
             border-radius: 50%;
             border-color: $border-color;
         }
+
         &:after {
             width: 14px;
             height: 14px;
@@ -1505,6 +1561,7 @@ textarea {
 .login-form-wrapper {
     .form-action {
         margin-top: 40px;
+
         .btn {
             cursor: pointer;
             border: none;
@@ -1516,11 +1573,13 @@ textarea {
             font-size: $font-size-base * 1.5;
             background-color: $primary-dark;
             margin-right: 60px;
+
             &:last-child {
                 margin-right: 0;
             }
         }
     }
+
     .success,
     .failed {
         width: 400px;
@@ -1529,10 +1588,12 @@ textarea {
         border-radius: 5px;
         max-width: 100%;
     }
+
     .success {
         color: #049c37;
         background: #c5ffbc;
     }
+
     .failed {
         color: #9c0404;
         background: #ffbcbc;
@@ -1542,23 +1603,29 @@ textarea {
 // Login form
 .login-form-wrapper {
     padding: 45px 65px;
+
     .form-control {
         font-size: $font-size-base * 0.9375;
         font-weight: 600;
         color: $primary;
         padding: 5px 8px;
     }
+
     .form-action {
         margin: 0;
+
         &--bottom {
             margin-top: 35px;
+
             .btn {
                 margin-left: 20px;
             }
         }
     }
+
     .form-group {
         margin-bottom: 0;
+
         &--label {
             line-height: normal;
             margin-bottom: 15px;
@@ -1568,20 +1635,24 @@ textarea {
 
 .form-row {
     display: flex;
+
     .email-box {
         width: 500px;
         max-width: 60%;
         padding-right: 80px;
     }
+
     .password-box {
         width: 295px;
         max-width: 40%;
         margin-right: 35px;
+
         .form-group--label {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
+
         .form-action {
             .btn {
                 margin-top: 30px;
@@ -1603,7 +1674,8 @@ textarea {
     padding: 17px 23px;
     border-radius: 25px;
     border: 2px solid $border-color;
-    & + .common-form-wrapper {
+
+    &+.common-form-wrapper {
         margin-top: 35px;
     }
 }
@@ -1630,12 +1702,14 @@ textarea {
     }
 
     .form-group {
+
         .form-checkbox,
         .form-radio {
             &--label {
                 font-weight: bold !important;
             }
         }
+
         input[type="time"] {
             &.form-control {
                 width: 113px;
@@ -1643,17 +1717,21 @@ textarea {
                 max-width: 100%;
             }
         }
+
         .form-control {
             &--inline {
                 .form-control--select {
                     width: 60px;
                 }
             }
+
             &--select {
                 font-weight: normal;
             }
+
             &--name {
                 position: relative;
+
                 &-text {
                     position: absolute;
                     right: 100%;
@@ -1666,6 +1744,7 @@ textarea {
                     display: block;
                     color: $primary-dark;
                     transform: translateY(-50%);
+
                     &.end {
                         right: auto;
                         left: 100%;
@@ -1679,6 +1758,7 @@ textarea {
         &.show-currency {
             .form-group--control {
                 position: relative;
+
                 &::after {
                     position: absolute;
                     content: "€";
@@ -1702,6 +1782,7 @@ textarea {
 
 .page-form-action {
     margin-top: 40px;
+
     .btn {
         cursor: pointer;
         padding: 12px 20px;
@@ -1723,22 +1804,27 @@ textarea {
             width: 50%;
             flex: 0 0 50%;
         }
+
         &--label {
             font-size: $font-size-base * 0.875;
             padding-right: 10px;
         }
+
         &--checkbox {
             width: 10%;
             flex: 0 0 10%;
         }
+
         &--time {
             width: 35%;
             flex: 0 0 35%;
         }
+
         &--text {
             width: 50%;
             flex: 0 0 50%;
         }
+
         &--control {
             .form-control {
                 &:not([type="time"]) {
@@ -1752,6 +1838,7 @@ textarea {
 
 .custom-message {
     display: flex;
+
     &--label {
         font-size: $font-size-base * 0.9375;
         line-height: normal;
@@ -1759,9 +1846,11 @@ textarea {
         display: block;
         color: $primary-dark;
     }
+
     &--control {
         flex-grow: 1;
     }
+
     .form-control {
         height: 196px;
     }
@@ -1772,37 +1861,46 @@ textarea {
         margin: 0 -20px;
         flex-wrap: wrap;
     }
+
     .column-4 {
         padding: 0 20px;
         margin-bottom: 30px;
+
         @media screen and (max-width: 991px) {
             width: 100%;
             flex: 0 0 100%;
         }
     }
+
     &--inner {
         padding: 18px 15px;
         border-radius: 25px;
         box-shadow: 0px 4px 4px 0px rgba($black, 0.4);
+
         &.bg-official {
             background-color: lighten($official-minyan, 45%);
         }
+
         &.bg-private {
             background-color: lighten($private-minyan, 50%);
         }
+
         &.bg-vacation {
             background-color: lighten($vacation-minyan, 15%);
         }
     }
+
     &--title {
         font-family: "Pacifico", sans-serif;
         font-size: $font-size-base * 2;
         font-weight: normal;
         color: $white;
+
         @media screen and (max-width: 991px) {
             font-size: $font-size-base * 1.625;
         }
     }
+
     &--bottom {
         display: flex;
         padding: 20px;
@@ -1813,11 +1911,13 @@ textarea {
         background-color: $white;
         justify-content: space-between;
     }
+
     &--desc {
         font-size: $font-size-base * 0.875;
         font-weight: 600;
         line-height: $font-size-base * 1.1875;
     }
+
     &--btn {
         width: 224px;
         margin: 0 auto;
@@ -1854,13 +1954,16 @@ textarea {
         display: flex;
         align-items: center;
         margin-bottom: 0.9375rem;
+
         &:last-child {
             margin-bottom: 0;
         }
+
         &.align-items-start {
             align-items: flex-start;
         }
     }
+
     &--label {
         font-size: $font-size-base * 0.9375;
         font-weight: 600;
@@ -1868,16 +1971,19 @@ textarea {
         flex: 0 0 25%;
         color: $primary-dark;
     }
+
     &--desc {
         font-size: $font-size-base * 0.9375;
         flex-grow: 1;
         color: $primary;
     }
+
     &--pictures {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
     &--image {
         display: flex;
         width: 228px;
@@ -1889,11 +1995,13 @@ textarea {
         color: $primary;
         justify-content: center;
         border: 1px solid $border-color;
+
         &.w-auto {
             width: auto;
         }
     }
 }
+
 // End - Verify Screen
 
 // Start - Search Screen
@@ -1904,13 +2012,16 @@ textarea {
         color: $primary;
         display: block;
     }
+
     &--search {
         width: 464px;
         max-width: 100%;
     }
+
     &--date {
         margin: 0 70px;
     }
+
     &--input {
         font-size: $font-size-base * 1.375;
         font-weight: normal;
@@ -1920,6 +2031,7 @@ textarea {
         padding: 5px 15px;
         border: 0.5px solid $border-color;
         box-shadow: 4px 4px 8px 0px rgba($black, 0.4);
+
         &::-webkit-input-placeholder {
             color: rgba(#0058c8, 0.5);
         }
@@ -1932,6 +2044,7 @@ textarea {
             color: rgba(#0058c8, 0.5);
         }
     }
+
     &--btn {
         font-size: $font-size-base * 1.375;
         font-weight: normal;
@@ -1943,22 +2056,27 @@ textarea {
         border-radius: 4px;
         border: 0.5px solid $border-color;
         box-shadow: 4px 4px 8px 0px rgba($black, 0.4);
+
         svg {
             fill: $primary-dark;
         }
     }
 }
+
 .bottom-filters {
     .form-radio {
         width: 160px;
         max-width: 100%;
+
         &--label {
             font-size: $font-size-base * 1.5 !important;
             font-weight: bold !important;
+
             &:before {
                 top: 50%;
                 transform: translateY(-50%);
             }
+
             &:after {
                 inset: 0;
                 margin: auto;
@@ -1976,6 +2094,7 @@ textarea {
 
 .view-on-map {
     font-size: $font-size-base * 1.5;
+
     &--img {
         width: 50px;
     }
@@ -1986,6 +2105,7 @@ textarea {
         display: flex;
         margin: 0 0;
     }
+
     .column-6 {
         padding: 0;
     }
@@ -1995,9 +2115,11 @@ textarea {
     .result-item {
         padding: 10px 14px;
         margin-bottom: 7px;
+
         &:last-child {
             margin-bottom: 0;
         }
+
         &--card {
             position: relative;
             border-radius: 15px;
@@ -2006,6 +2128,7 @@ textarea {
             border: 2px solid $border-color;
             box-shadow: 6px 6px 6px 0px rgba($black, 0.4);
         }
+
         &--fav {
             position: absolute;
             right: 34px;
@@ -2013,11 +2136,13 @@ textarea {
             z-index: 2;
             cursor: pointer;
         }
+
         &--title {
             font-size: $font-size-base * 2.125;
             margin-bottom: 18px;
             padding-right: 50px;
         }
+
         &--details {
             font-size: $font-size-base * 1.5;
             color: $primary;
@@ -2026,8 +2151,10 @@ textarea {
             min-height: 150px;
             line-height: $font-size-base * 2.25;
         }
+
         &--action {
             margin-top: 12px;
+
             .btn {
                 cursor: pointer;
                 height: 55px;
@@ -2035,51 +2162,87 @@ textarea {
                 max-width: 100%;
             }
         }
+
         &.bg-official {
             .result-item--card {
                 border-color: darken($official-minyan, 10%);
             }
+
             .result-item--title {
                 color: $official-minyan;
             }
+
             .btn {
                 color: $official-minyan;
                 border-color: darken($official-minyan, 10%);
+
+                a {
+                    color: $official-minyan;
+                }
+
                 &:hover {
                     color: $white;
                     background-color: $official-minyan;
+
+                    a {
+                        color: $white;
+                    }
                 }
             }
         }
+
         &.bg-private {
             .result-item--card {
                 border-color: darken($private-minyan, 10%);
             }
+
             .result-item--title {
                 color: $private-minyan;
             }
+
             .btn {
                 color: $private-minyan;
                 border-color: darken($private-minyan, 10%);
+
+                a {
+                    color: $private-minyan;
+                }
+
                 &:hover {
                     color: $white;
                     background-color: $private-minyan;
+
+                    a {
+                        color: $white;
+                    }
                 }
             }
         }
+
         &.bg-vacation {
             .result-item--card {
                 border-color: darken($vacation-minyan, 10%);
             }
+
             .result-item--title {
                 color: $vacation-minyan;
             }
+
             .btn {
                 color: $vacation-minyan;
                 border-color: darken($vacation-minyan, 10%);
+
+                a {
+                    color: $vacation-minyan;
+                }
+
                 &:hover {
                     color: $white;
                     background-color: $vacation-minyan;
+
+                    a {
+                        color: $white;
+                    }
                 }
             }
         }
@@ -2091,11 +2254,14 @@ textarea {
     bottom: 25px;
     right: 34px;
     z-index: 2;
+
     &-item {
         margin-right: 12px;
+
         &:last-child {
             margin-right: 0;
         }
+
         svg {
             display: block;
         }
@@ -2104,6 +2270,7 @@ textarea {
 
 .iframe-wrapper {
     height: 100%;
+
     .iframe-content,
     #map {
         width: 100% !important;
@@ -2115,9 +2282,11 @@ textarea {
 .pagination {
     &-item {
         margin-right: 30px;
+
         &:last-child {
             margin-right: 0;
         }
+
         &.active {
             .pagination-link {
                 font-weight: bold;
@@ -2125,12 +2294,48 @@ textarea {
             }
         }
     }
+
     &-link {
         font-size: $font-size-base * 1.5;
         display: block;
         color: $primary;
     }
 }
+
+.no-results {
+    margin: 50px 0;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .page-title {
+        color: $primary-dark;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .page-content {
+        > p {
+            color: $primary;
+            font-size: $font-size-base;
+        }
+    }
+    .search-form {
+        margin-top: 20px;
+        text-align: center;
+        .search-field {
+            @extend .form-control;
+            @extend .filter-item--input;
+        }
+        .search-submit {
+            @extend .btn;
+            cursor: pointer;
+            margin-top: 15px;
+            min-width: 100px;
+        }
+    }
+}
+
 // End - Search Screen
 
 // Start - Search Detail Screen
@@ -2139,15 +2344,19 @@ textarea {
     overflow: hidden;
     margin-bottom: 110px;
     box-shadow: 0px 0px 10px 5px rgba($black, 0.3);
+
     .row {
         display: flex;
     }
+
     .column-6 {
         padding: 0;
     }
+
     &--detail {
         padding: 30px;
     }
+
     .est-name {
         font-size: $font-size-base * 2;
     }
@@ -2157,12 +2366,15 @@ textarea {
     position: relative;
     padding-bottom: 40px;
     margin-bottom: 30px;
-    & ~ .est-details {
+
+    &~.est-details {
         margin-bottom: 0;
+
         &::after {
             display: none;
         }
     }
+
     &::after {
         position: absolute;
         content: "";
@@ -2174,10 +2386,12 @@ textarea {
         bottom: -4px;
         background-color: rgba($border-color, 0.7);
     }
+
     &--item {
         font-size: $font-size-base * 1.5625;
         margin-top: 30px;
     }
+
     &--icon {
         font-size: $font-size-base * 1.875;
         width: 50px;
@@ -2197,17 +2411,21 @@ textarea {
         display: flex;
         margin: 0 -15px;
     }
+
     .est-name {
         font-size: $font-size-base * 2.5;
         margin-bottom: 45px;
     }
+
     .slider-item {
         &--inner {
             padding: 0;
         }
+
         &--img {
             width: 100%;
         }
+
         &--picture {
             .play-btn--icon {
                 width: 80px;
@@ -2224,9 +2442,11 @@ textarea {
 
 .m-accordion {
     border-top: 4px solid $primary-dark;
+
     &:last-child {
         border-bottom: 4px solid $primary-dark;
     }
+
     &--title {
         font-size: $font-size-base * 2;
         color: $primary-dark;
@@ -2234,6 +2454,7 @@ textarea {
         position: relative;
         cursor: pointer;
         text-transform: uppercase;
+
         &:after {
             position: absolute;
             content: "";
@@ -2246,6 +2467,7 @@ textarea {
             transform: translateY(-50%);
             background-color: #0058c8;
         }
+
         &:before {
             position: absolute;
             content: "";
@@ -2259,13 +2481,16 @@ textarea {
             border-bottom: 3px solid $white;
         }
     }
+
     &--desc {
         padding: 0 10px 20px;
         display: none;
+
         &.active {
             display: block;
         }
     }
+
     .text-desc {
         font-size: $font-size-base * 2;
     }
@@ -2274,43 +2499,53 @@ textarea {
 .inline-cards {
     .row {
         display: flex;
+
         &.mw-90 {
             width: 90%;
             margin: 0 auto;
         }
+
         &.three-column {
             margin: 0 -15px;
         }
     }
+
     .column-4 {
         padding: 0 15px;
     }
+
     .card {
         padding: 25px;
         overflow: hidden;
         border-radius: 40px;
         border: 2px solid rgba($border-color, 0.5);
         box-shadow: 0px 0px 10px -2px rgba($black, 0.2);
+
         &--title {
             font-size: $font-size-base * 2;
             color: $primary-dark;
             margin-bottom: 12px;
         }
+
         &--table {
             width: 100%;
+
             td {
                 font-size: $font-size-base * 1.625;
                 color: $primary-dark;
                 padding-bottom: 5px;
                 vertical-align: top;
-                & + td {
+
+                &+td {
                     padding-left: 20px;
                     color: $primary;
                 }
+
                 &.day-name {
                     width: 140px;
                 }
             }
+
             tr {
                 &:last-child {
                     td {
@@ -2320,50 +2555,62 @@ textarea {
             }
         }
     }
+
     &.fs-small {
         .card--title {
             font-size: $font-size-base * 1.5;
         }
+
         .card--table {
             td {
                 font-size: $font-size-base * 1.25;
                 padding-bottom: 10px;
+
                 &.day-name {
                     width: 110px;
                 }
+
                 &.label {
                     width: 210px;
                 }
             }
         }
     }
+
     &.fs-normal {
         .card--title {
             font-size: $font-size-base * 0.9375;
         }
+
         .card--table {
             td {
                 font-size: $font-size-base * 0.9375;
                 padding-bottom: 10px;
-                & + td {
+
+                &+td {
                     padding-left: 5px;
                 }
+
                 &.day-name {
                     width: 90px;
                 }
+
                 &.label {
                     width: 210px;
                 }
             }
         }
+
         .block--list {
             font-size: $font-size-base * 0.9375;
         }
     }
+
     .block-title {
         color: $primary-dark;
         font-size: $font-size-base * 1.5;
     }
+
     .block {
         &--list {
             list-style: disc;
@@ -2371,10 +2618,13 @@ textarea {
             font-size: $font-size-base * 1.1875;
         }
     }
+
     .block-info {
         font-size: $font-size-base * 1.25;
+
         &--item {
             margin-bottom: 10px;
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -2385,6 +2635,7 @@ textarea {
         border-left: 1px solid $primary-dark;
     }
 }
+
 // End - Search Detail Screen
 
 // Responsive
@@ -2464,11 +2715,13 @@ textarea {
 
     .login-form-wrapper {
         padding: 35px;
+
         .form-group {
             &--label {
                 font-size: $font-size-base * 1.125;
             }
         }
+
         .form-action {
             .fs-medium {
                 font-size: $font-size-base * 1.125;
@@ -2477,6 +2730,7 @@ textarea {
     }
 
     .form-row {
+
         .email-box,
         .password-box {
             max-width: 45%;
@@ -2522,6 +2776,7 @@ textarea {
 
         &--dropdown {
             left: -44px;
+
             &.user-loggedin-details {
                 left: -64px;
             }
@@ -2635,6 +2890,7 @@ textarea {
 
     .form-row {
         flex-direction: column;
+
         .email-box,
         .password-box {
             width: 100%;
@@ -2675,6 +2931,7 @@ textarea {
 
         &--dropdown {
             left: -52px;
+
             &.user-loggedin-details {
                 left: -72px;
             }
@@ -2753,6 +3010,7 @@ textarea {
 
     .slider-section {
         padding: 25px 0 35px 0;
+
         &.mt-2 {
             margin-top: 30px;
         }
@@ -2808,13 +3066,16 @@ textarea {
 
     .register-form {
         padding: 15px;
+
         .form-group {
             flex-direction: column;
+
             &--label,
             &--control {
                 width: 100%;
                 flex: 0 0 100%;
             }
+
             .form-checkbox {
                 margin-top: 5px;
             }
@@ -2823,6 +3084,7 @@ textarea {
 
     .login-form-wrapper {
         padding: 20px;
+
         .form-action {
             &--bottom {
                 margin-top: 15px;
