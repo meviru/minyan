@@ -2118,15 +2118,17 @@ textarea {
         &:last-child {
             margin-right: 0;
         }
+        &.active {
+            .pagination-link {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
     }
     &-link {
         font-size: $font-size-base * 1.5;
         display: block;
         color: $primary;
-        &.active {
-            font-weight: bold;
-            text-decoration: underline;
-        }
     }
 }
 // End - Search Screen
@@ -2355,7 +2357,7 @@ textarea {
             }
         }
         .block--list {
-            font-size: $font-size-base * .9375;
+            font-size: $font-size-base * 0.9375;
         }
     }
     .block-title {
@@ -2378,7 +2380,7 @@ textarea {
             }
         }
     }
-    
+
     .border-left {
         border-left: 1px solid $primary-dark;
     }

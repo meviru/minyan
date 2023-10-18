@@ -2252,14 +2252,14 @@ textarea.form-control {
 .pagination-item:last-child {
   margin-right: 0;
 }
+.pagination-item.active .pagination-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
 .pagination-link {
   font-size: 24px;
   display: block;
   color: #2aa9e3;
-}
-.pagination-link.active {
-  font-weight: bold;
-  text-decoration: underline;
 }
 
 .est-section {
