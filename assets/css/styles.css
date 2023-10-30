@@ -2632,6 +2632,24 @@ textarea.form-control, .no-results .search-form textarea.search-field {
   flex: 0 0 50%;
 }
 
+.media-list .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.media-list .slider-item {
+  margin-bottom: 20px;
+  width: 33.33%;
+}
+.media-list .slider-item--img {
+  width: 100%;
+}
+.media-list .slider-item--picture {
+  box-shadow: 4px 3px 8px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 45px;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1280px) {
   .see-all-btn {
     right: 20px;
