@@ -2754,8 +2754,51 @@ textarea {
             overflow: hidden;
         }
     }
+
+    &.minyan-list {
+        .slider-item {
+            margin-bottom: 100px;
+        }
+    }
 }
 // End - Media page
+
+// Single Minyan
+.single-minyan {
+    margin: 20px 0 150px;
+    .slider-item {
+        width: 952px;
+        margin: 0 auto;
+        max-width: 100%;
+        &--img {
+            width: 100%;
+        }
+        &--date {
+            top: 25px;
+            left: 25px;
+            border-radius: 42px;
+            padding: 25px 45px;
+            font-size: $font-size-base * 2.0625;
+            transform: none;
+        }
+        &--picture {
+            .play-btn {
+                &--icon {
+                    inset: 0;
+                    width: 185px;
+                    height: 185px;
+                    &::after {
+                        left: 20px;
+                        border-left-width: 90px;
+                        border-top-width: 60px;
+                        border-bottom-width: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+// End - Single Minyan
 
 // Responsive
 @media screen and (max-width: 1280px) {
