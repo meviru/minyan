@@ -1695,6 +1695,19 @@ textarea {
     }
 }
 
+// Forgot password
+.forgot-password-form {
+    width: 916px;
+    margin: 0 auto;
+    border: 2px solid $border-color;
+    .btn {
+        font-size: $font-size-base * 1.5;
+        border-radius: 20px;
+        border-color: $primary-dark;
+        background-color: $primary-dark;
+    }
+}
+
 // Create Minyan Pages
 .create-minyan-wrapper {
     .container {
@@ -2020,6 +2033,11 @@ textarea {
                 width: 25%;
                 max-width: 156px;
                 height: 156px;
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    max-height: 156px;
+                }
             }
         }
     }
@@ -2033,11 +2051,14 @@ textarea {
         text-align: center;
         font-size: $font-size-base * 0.9375;
         color: $primary;
+        overflow: hidden;
         justify-content: center;
         border: 1px solid $border-color;
 
-        &.w-auto {
-            width: auto;
+        img {
+            width: 100%;
+            object-fit: contain;
+            max-height: 184px;
         }
     }
 }
@@ -2799,6 +2820,35 @@ textarea {
     }
 }
 // End - Single Minyan
+
+// Account Page
+.account-section {
+    width: 695px;
+    margin: 0 auto;
+    max-width: 100%;
+    .btn {
+        font-size: $font-size-base * 1.5;
+        text-transform: unset;
+        border-radius: 20px;
+        border-color: $primary-dark;
+        background-color: $primary-dark;
+        &:hover {
+            border-color: darken($primary-dark, 5%);
+            background-color: darken($primary-dark, 5%);
+        }
+    }
+}
+
+.edit-info-form {
+    width: 672px;
+    .profile-img {
+        .form-info--image {
+            width: 130px;
+            height: 150px;
+        }
+    }
+}
+// End - Account Page
 
 // Responsive
 @media screen and (max-width: 1280px) {

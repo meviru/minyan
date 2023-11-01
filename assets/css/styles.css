@@ -1822,6 +1822,18 @@ textarea.form-control, .no-results .search-form textarea.search-field {
   margin-top: 30px;
 }
 
+.forgot-password-form {
+  width: 916px;
+  margin: 0 auto;
+  border: 2px solid #d1d1d1;
+}
+.forgot-password-form .btn, .forgot-password-form .no-results .search-form .search-submit, .no-results .search-form .forgot-password-form .search-submit {
+  font-size: 24px;
+  border-radius: 20px;
+  border-color: #097cb0;
+  background-color: #097cb0;
+}
+
 .create-minyan-wrapper .container {
   width: 1220px;
 }
@@ -2082,6 +2094,12 @@ textarea.form-control, .no-results .search-form textarea.search-field {
   max-width: 156px;
   height: 156px;
 }
+.form-info--pictures.sm-pictures .form-info--image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 156px;
+}
 .form-info--image {
   display: flex;
   width: 228px;
@@ -2091,11 +2109,15 @@ textarea.form-control, .no-results .search-form textarea.search-field {
   text-align: center;
   font-size: 15px;
   color: #2aa9e3;
+  overflow: hidden;
   justify-content: center;
   border: 1px solid #d1d1d1;
 }
-.form-info--image.w-auto {
-  width: auto;
+.form-info--image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 184px;
 }
 
 .filter-item--label {
@@ -2682,6 +2704,31 @@ textarea.form-control, .no-results .search-form textarea.search-field {
   border-left-width: 90px;
   border-top-width: 60px;
   border-bottom-width: 60px;
+}
+
+.account-section {
+  width: 695px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.account-section .btn, .account-section .no-results .search-form .search-submit, .no-results .search-form .account-section .search-submit {
+  font-size: 24px;
+  text-transform: unset;
+  border-radius: 20px;
+  border-color: #097cb0;
+  background-color: #097cb0;
+}
+.account-section .btn:hover, .account-section .no-results .search-form .search-submit:hover, .no-results .search-form .account-section .search-submit:hover {
+  border-color: #086b98;
+  background-color: #086b98;
+}
+
+.edit-info-form {
+  width: 672px;
+}
+.edit-info-form .profile-img .form-info--image {
+  width: 130px;
+  height: 150px;
 }
 
 @media screen and (max-width: 1280px) {
