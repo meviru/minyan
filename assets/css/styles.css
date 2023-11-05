@@ -591,6 +591,10 @@ button {
   justify-content: space-between;
 }
 
+.failed {
+  color: #f00;
+}
+
 .site-header {
   position: relative;
   height: 79px;
