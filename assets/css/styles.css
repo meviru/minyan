@@ -2760,6 +2760,28 @@ textarea.form-control, .no-results .search-form textarea.search-field {
   .slick-arrow.slick-next::before {
     left: 11px;
   }
+  .common-form .row {
+    margin: 0 -15px;
+  }
+  .common-form .column-6 {
+    padding: 0 15px;
+  }
+  .common-form .column-12 {
+    padding: 0 15px;
+  }
+  .common-form .inline-controls {
+    padding-left: 0 !important;
+  }
+  .common-form .form-group input[type=time].form-control, .common-form .form-group .no-results .search-form input[type=time].search-field, .no-results .search-form .common-form .form-group input[type=time].search-field {
+    width: 94px;
+  }
+  .inline-column-wrap .inline-column--time {
+    width: 40%;
+    flex: 0 0 40%;
+  }
+  .inline-column-wrap .inline-column--control .form-control:not([type=time]), .inline-column-wrap .inline-column--control .no-results .search-form .search-field:not([type=time]), .no-results .search-form .inline-column-wrap .inline-column--control .search-field:not([type=time]) {
+    width: 158px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .site-logo--img {
@@ -3103,6 +3125,52 @@ textarea.form-control, .no-results .search-form textarea.search-field {
     border-top-width: 20px;
     border-bottom-width: 20px;
   }
+  .common-form .row {
+    flex-wrap: wrap;
+  }
+  .common-form .column-6 {
+    width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+  .common-form .column-6:last-child {
+    margin-bottom: 0;
+  }
+  .common-form .form-group input[type=time].form-control, .common-form .form-group .no-results .search-form input[type=time].search-field, .no-results .search-form .common-form .form-group input[type=time].search-field {
+    width: 100%;
+  }
+  .inline-column-wrap {
+    margin-bottom: 15px !important;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d1d1d1;
+  }
+  .inline-column-wrap:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0 !important;
+    border-bottom: none;
+  }
+  .inline-column-wrap .inline-column--label {
+    flex-shrink: 0;
+  }
+  .inline-column-wrap .inline-column--control {
+    flex-grow: 1;
+  }
+  .inline-column-wrap .inline-column--control .form-control:not([type=time]), .inline-column-wrap .inline-column--control .no-results .search-form .search-field:not([type=time]), .no-results .search-form .inline-column-wrap .inline-column--control .search-field:not([type=time]) {
+    width: 100%;
+  }
+  .inline-column-wrap .inline-column--checkbox {
+    width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+  .inline-column-wrap .inline-column--time {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  .inline-column-wrap .inline-column--text {
+    width: 100%;
+    flex: 0 0 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .site-header {
@@ -3382,6 +3450,63 @@ textarea.form-control, .no-results .search-form textarea.search-field {
     border-left-width: 20px;
     border-top-width: 15px;
     border-bottom-width: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .common-form .form-group {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .common-form .form-group:last-child {
+    margin-bottom: 0;
+  }
+  .common-form .form-group--label {
+    width: auto;
+    flex: 0 0 auto;
+    margin-bottom: 5px;
+  }
+  .common-form .form-group--control {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  .common-form .form-group .form-control--name-text {
+    display: block;
+    margin: 5px 0;
+    position: static;
+    transform: none;
+  }
+  .common-form .form-group .form-control--name-text.end {
+    position: absolute;
+  }
+  .common-form .form-group .form-control--inline {
+    align-items: flex-start;
+  }
+  .common-form-wrapper {
+    padding: 15px;
+  }
+  .inline-column-wrap .inline-column--time, .inline-column-wrap .inline-column--text {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .inline-column-wrap .inline-column--inner {
+    padding: 0;
+    width: 100%;
+  }
+  .inline-column-wrap .inline-column--control {
+    width: 100%;
+  }
+  .inline-column-wrap .inline-column .input-time,
+  .inline-column-wrap .inline-column .input-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .custom-message {
+    flex-direction: column;
+  }
+  .custom-message--control {
+    margin-top: 10px;
+    padding-left: 0 !important;
   }
 }
 @media screen and (max-width: 340px) {

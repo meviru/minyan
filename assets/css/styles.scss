@@ -2890,6 +2890,45 @@ textarea {
             }
         }
     }
+    .common-form {
+        .row {
+            margin: 0 -15px;
+        }
+        .column-6 {
+            padding: 0 15px;
+        }
+        .column-12 {
+            padding: 0 15px;
+        }
+
+        .inline-controls {
+            padding-left: 0 !important;
+        }
+
+        .form-group {
+            input[type="time"] {
+                &.form-control {
+                    width: 94px;
+                }
+            }
+        }
+    }
+
+    .inline-column-wrap {
+        .inline-column {
+            &--time {
+                width: 40%;
+                flex: 0 0 40%;
+            }
+            &--control {
+                .form-control {
+                    &:not([type="time"]) {
+                        width: 158px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -3385,6 +3424,64 @@ textarea {
             }
         }
     }
+
+    .common-form {
+        .row {
+            flex-wrap: wrap;
+        }
+        .column-6 {
+            width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .form-group {
+            input[type="time"] {
+                &.form-control {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .inline-column-wrap {
+        margin-bottom: 15px !important;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $border-color;
+        &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0 !important;
+            border-bottom: none;
+        }
+        .inline-column {
+            &--label {
+                flex-shrink: 0;
+            }
+            &--control {
+                flex-grow: 1;
+                .form-control {
+                    &:not([type="time"]) {
+                        width: 100%;
+                    }
+                }
+            }
+            &--checkbox {
+                width: 100%;
+                flex: 0 0 100%;
+                margin-bottom: 10px;
+            }
+            &--time {
+                width: 100%;
+                flex: 0 0 100%;
+            }
+            &--text {
+                width: 100%;
+                flex: 0 0 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -3782,6 +3879,79 @@ textarea {
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .common-form {
+        .form-group {
+            flex-direction: column;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &--label {
+                width: auto;
+                flex: 0 0 auto;
+                margin-bottom: 5px;
+            }
+            &--control {
+                width: 100%;
+                flex: 0 0 100%;
+            }
+            
+            .form-control {
+                &--name {
+                    &-text {
+                        display: block;
+                        margin: 5px 0;
+                        position: static;
+                        transform: none;
+                        &.end {
+                            position: absolute;
+                        }
+                    }
+                }
+                &--inline {
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+
+    .common-form-wrapper {
+        padding: 15px;
+    }
+
+    .inline-column-wrap {
+        .inline-column {
+            &--time,
+            &--text {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 10px;
+            }
+            &--inner {
+                padding: 0;
+                width: 100%;
+            }
+            &--control {
+                width: 100%;
+            }
+            .input-time,
+            .input-text {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    .custom-message {
+        flex-direction: column;
+        &--control {
+            margin-top: 10px;
+            padding-left: 0 !important;
         }
     }
 }
