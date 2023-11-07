@@ -1703,6 +1703,7 @@ textarea {
 .forgot-password-form {
     width: 916px;
     margin: 0 auto;
+    max-width: 100%;
     border: 2px solid $border-color;
     .btn {
         font-size: $font-size-base * 1.5;
@@ -1995,6 +1996,7 @@ textarea {
 .inline-common-form {
     .row {
         display: flex;
+        flex-wrap: wrap;
         margin: 0 -15px;
     }
 }
@@ -2612,6 +2614,11 @@ textarea {
 
         &--table {
             width: 100%;
+            border-collapse: collapse;
+
+            table {
+                border-collapse: collapse;
+            }
 
             td {
                 font-size: $font-size-base * 1.625;
@@ -2929,6 +2936,16 @@ textarea {
             }
         }
     }
+
+    .form-info {
+        &--image {
+            width: 188px;
+        }
+        &--label {
+            width: 40%;
+            flex: 0 0 40%;
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -3097,6 +3114,55 @@ textarea {
             margin-top: 20px;
             &--pictures {
                 padding: 0 !important;
+            }
+        }
+    }
+
+    .inline-cards {
+        &.inline-common-form {
+            .row {
+                flex-wrap: wrap;
+            }
+            .border-left {
+                border-left: none;
+            }
+            .column-6 {
+                width: 100%;
+                flex: 0 0 100%;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .miyan-detail {
+        .form-info {
+            &--label {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .video-wrapper {
+        &--title {
+            font-size: $font-size-base * 1.375;
+        }
+    }
+
+    .detail-wrapper {
+        .form-info {
+            margin: 0 !important;
+            padding-left: 0 !important;
+            &--pictures {
+                margin-top: 15px;
+            }
+        }
+        .inline-cards {
+            &.inline-common-form {
+                .column-6 {
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }
@@ -3349,6 +3415,7 @@ textarea {
 
     .inline-cards {
         .row {
+            flex-wrap: wrap;
             &.mw-90 {
                 width: 100%;
             }
@@ -3479,6 +3546,32 @@ textarea {
             &--text {
                 width: 100%;
                 flex: 0 0 100%;
+            }
+        }
+    }
+
+    .form-info {
+        &--pictures {
+            padding: 0 !important;
+        }
+        &--image {
+            width: calc(25% - 15px);
+            height: 148px;
+            margin-bottom: 15px;
+        }
+        &--label {
+            width: 50%;
+            flex: 0 0 50%;
+        }
+    }
+
+    .card {
+        &--table {
+            .form-info {
+                &--image {
+                    width: 100%;
+                    height: 188px;
+                }
             }
         }
     }
@@ -3650,8 +3743,11 @@ textarea {
         padding: 15px;
 
         .form-group {
+            margin-bottom: 10px;
             flex-direction: column;
-
+            &--label {
+                margin-bottom: 5px;
+            }
             &--label,
             &--control {
                 width: 100%;
@@ -3679,7 +3775,17 @@ textarea {
     .login-form-wrapper {
         .form-action {
             .btn {
-                margin-right: 30px;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .edit-info-form {
+        .profile-img {
+            .form-info {
+                &--image {
+                    margin-bottom: 0;
+                }
             }
         }
     }
@@ -3750,6 +3856,9 @@ textarea {
         .block-title {
             font-size: $font-size-base * 1.25;
         }
+        .border-left {
+            border-left: none;
+        }
         &.fs-small {
             .card {
                 &--title {
@@ -3758,6 +3867,17 @@ textarea {
                 &--table {
                     td {
                         font-size: $font-size-base * 1.125;
+                    }
+                }
+            }
+        }
+        &.fs-normal {
+            .card {
+                &--table {
+                    td {
+                        & + td {
+                            padding-bottom: 0;
+                        }
                     }
                 }
             }
@@ -3771,7 +3891,7 @@ textarea {
                 tr td,
                 tr td + td {
                     display: block;
-                    padding-left: 0;
+                    padding-left: 0 !important;
                 }
                 > tbody {
                     > tr {
@@ -3793,6 +3913,8 @@ textarea {
         .column-4 {
             width: 100%;
             flex: 0 0 100%;
+            padding-left: 0;
+            padding-right: 0;
             margin-bottom: 20px;
             &:last-child {
                 margin-bottom: 0;
@@ -3844,7 +3966,7 @@ textarea {
         flex-wrap: wrap;
         justify-content: center;
         .btn {
-            margin: 10px 0;
+            margin: 10px 0 !important;
             font-size: $font-size-base * 1.125;
         }
     }
@@ -3881,6 +4003,78 @@ textarea {
             }
         }
     }
+
+    .inline-common-form {
+        padding: 0 15px;
+        .column-6 {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .verify-screen-wrapper {
+        .common-form-wrapper {
+            .row {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .form-info {
+        &--pictures {
+            margin-top: 20px;
+            padding: 0 !important;
+        }
+        &--image {
+            height: 188px;
+            width: calc(50% - 15px);
+            flex: 0 0 calc(50% - 15px);
+        }
+    }
+
+    .card {
+        &--table {
+            .form-info {
+                &--image {
+                    width: 100%;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .congrats-wrapper {
+        font-size: $font-size-base * 1.125;
+    }
+
+    .common-title {
+        font-size: $font-size-base * 1.375;
+    }
+
+    .detail-wrapper {
+        .column-6 {
+            .row {
+                padding: 0 15px;
+            }
+        }
+        .form-info {
+            &--pictures {
+                &.sm-pictures {
+                    .form-info {
+                        &--image {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            &--label {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -3900,7 +4094,7 @@ textarea {
                 width: 100%;
                 flex: 0 0 100%;
             }
-            
+
             .form-control {
                 &--name {
                     &-text {
@@ -3952,6 +4146,19 @@ textarea {
         &--control {
             margin-top: 10px;
             padding-left: 0 !important;
+        }
+    }
+
+    .form-info {
+        &--pictures {
+            margin-top: 20px;
+            padding: 0 !important;
+        }
+        &--image {
+            height: 188px;
+            width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 2rem;
         }
     }
 }
