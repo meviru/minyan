@@ -759,6 +759,26 @@ button {
   color: #fff;
 }
 
+.logged-user-detail {
+  display: flex;
+  align-items: center;
+}
+.logged-user-detail li {
+  color: #fff;
+  font-weight: 500;
+  margin-left: 10px;
+  padding-left: 10px;
+  text-align: center;
+  border-left: 2px solid #fff;
+}
+.logged-user-detail li:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+.logged-user-detail li a {
+  color: #fff;
+}
+
 .hebrew-date {
   font-family: "Pacifico", sans-serif;
   font-size: 25px;
@@ -914,6 +934,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 13;
   color: #fff;
   padding: 15px;
   min-width: 168px;
@@ -2344,6 +2365,22 @@ textarea.form-control, .no-results .search-form textarea.search-field {
 }
 .iframe-wrapper.custom-iframe {
   height: 320px;
+}
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .video-wrapper--title {

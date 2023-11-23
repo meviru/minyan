@@ -24,13 +24,20 @@
                     </a>
                 </div>
                 <div class="user-menu">
-                    <div id="user-menu"
-                        class="user-menu--icon cursor-pointer d-flex align-items-center justify-content-center">
-                        <img src="assets/images/user-icon.svg" alt="User">
-                    </div>
-                    <div id="user-dropdown" class="user-menu--dropdown">
-                        <a href="javascript:void(0)" class="user-menu--btn">Sign Up</a>
-                        <a href="javascript:void(0)" class="user-menu--btn">Sign In</a>
+                    <div class="d-flex align-items-center">
+                        <div id="user-menu"
+                            class="user-menu--icon cursor-pointer d-flex align-items-center justify-content-center">
+                            <img src="assets/images/user-icon.svg" alt="User">
+                        </div>
+                        <ul class="logged-user-detail">
+                            <li>Hello PSEUDO</li>
+                            <li>
+                                <a href="javascript:void(0)">My account</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">Logout</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="right-menu d-flex">
@@ -83,17 +90,17 @@
             </div>
             <div class="media-wrapper pt-3 px-4">
                 <div class="single-minyan">
-                    <div class="slider-item">
-                        <div class="slider-item--inner">
-                            <div class="slider-item--picture play-btn">
-                                <div class="play-btn--icon"></div>
-                                <img class="slider-item--img" src="assets/images/minyan-1.png" alt="Minyan">
-                                <div class="slider-item--date">04 août 23</div>
-                            </div>
-                        </div>
+                    <div class="slider-item iframe-container">
+                        <iframe title="Dummy Video For YouTube API Test" width="640" height="360"
+                            src="https://www.youtube.com/embed/9xwazD5SyVg?feature=oembed&amp;controls=0&amp;hd=1&amp;autohide=1&amp;width=-webkit-fill-available"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen=""></iframe>
+                        <div class="slider-item--date">04 août 23</div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <footer class="site-footer">
