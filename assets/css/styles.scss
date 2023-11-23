@@ -319,7 +319,6 @@ button {
 .site-header {
     position: relative;
     height: 79px;
-    z-index: 10;
     padding-top: 24px;
     margin-bottom: 32px;
     background-color: $primary-light;
@@ -343,7 +342,7 @@ button {
 .user-menu {
     position: absolute;
     left: 50%;
-    z-index: 3;
+    z-index: 15;
     transform: translateX(-50%);
 
     &--icon {
@@ -418,7 +417,7 @@ button {
 // Language switcher
 .lang-switcher {
     position: relative;
-    z-index: 3;
+    z-index: 15;
     top: 10px;
 }
 
@@ -661,6 +660,7 @@ button {
         width: 342px;
         display: block;
         margin: 0 auto;
+        border-radius: 12px;
         object-fit: cover;
     }
 
@@ -684,7 +684,8 @@ button {
         top: 50%;
         left: 50%;
         color: $white;
-        padding: 15px 20px;
+        padding: 15px;
+        min-width: 168px;
         border-radius: 50px;
         transform: translate(-50%, -50%);
         font-size: $font-size-base * 1.125;
@@ -1840,6 +1841,9 @@ textarea {
         font-size: $font-size-base * 1.5;
         border-radius: 19px;
         text-transform: none;
+        svg {
+            display: none;
+        }
     }
 }
 

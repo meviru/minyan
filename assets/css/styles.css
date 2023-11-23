@@ -598,7 +598,6 @@ button {
 .site-header {
   position: relative;
   height: 79px;
-  z-index: 10;
   padding-top: 24px;
   margin-bottom: 32px;
   background-color: #7acef4;
@@ -618,7 +617,7 @@ button {
 .user-menu {
   position: absolute;
   left: 50%;
-  z-index: 3;
+  z-index: 15;
   transform: translateX(-50%);
 }
 .user-menu--icon {
@@ -684,7 +683,7 @@ button {
 
 .lang-switcher {
   position: relative;
-  z-index: 3;
+  z-index: 15;
   top: 10px;
 }
 
@@ -895,6 +894,7 @@ button {
   width: 342px;
   display: block;
   margin: 0 auto;
+  border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -915,7 +915,8 @@ button {
   top: 50%;
   left: 50%;
   color: #fff;
-  padding: 15px 20px;
+  padding: 15px;
+  min-width: 168px;
   border-radius: 50px;
   transform: translate(-50%, -50%);
   font-size: 18px;
@@ -1937,6 +1938,9 @@ textarea.form-control, .no-results .search-form textarea.search-field {
   font-size: 24px;
   border-radius: 19px;
   text-transform: none;
+}
+.page-form-action .btn svg, .page-form-action .no-results .search-form .search-submit svg, .no-results .search-form .page-form-action .search-submit svg {
+  display: none;
 }
 
 .column-4 {
