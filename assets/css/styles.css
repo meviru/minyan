@@ -598,6 +598,7 @@ button {
 .site-header {
   position: relative;
   height: 79px;
+  z-index: 99;
   padding-top: 24px;
   margin-bottom: 32px;
   background-color: #7acef4;
@@ -917,6 +918,7 @@ button {
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
+  min-height: 228px;
 }
 .slider-item--btn {
   margin-top: 16px;
@@ -1482,10 +1484,7 @@ textarea.form-control, .no-results .search-form textarea.search-field {
   padding-left: 0;
 }
 .breadcrumb-top {
-  position: relative;
-  top: -55px;
-  z-index: 12;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 .breadcrumb-top .breadcrumb-item.active .breadcrumb-link {
   color: #2aa9e3;

@@ -319,6 +319,7 @@ button {
 .site-header {
     position: relative;
     height: 79px;
+    z-index: 99;
     padding-top: 24px;
     margin-bottom: 32px;
     background-color: $primary-light;
@@ -682,6 +683,7 @@ button {
         margin: 0 auto;
         border-radius: 12px;
         object-fit: cover;
+        min-height: 228px;
     }
 
     &--btn {
@@ -1311,10 +1313,7 @@ textarea {
     }
 
     &-top {
-        position: relative;
-        top: -55px;
-        z-index: 12;
-        margin-bottom: 0;
+        margin-bottom: 20px;
 
         .breadcrumb-item {
             &.active {
