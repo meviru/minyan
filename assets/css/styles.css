@@ -3325,6 +3325,10 @@ textarea.form-control, .no-results .search-form textarea.search-field {
     left: 0;
     font-size: 20px;
     margin-top: 20px;
+    display: none;
+  }
+  .home .hebrew-date {
+    display: block;
   }
   .search-wrapper {
     bottom: 30px;

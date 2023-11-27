@@ -3690,6 +3690,10 @@ textarea {
         left: 0;
         font-size: $font-size-base * 1.25;
         margin-top: 20px;
+        display: none;
+        .home & {
+            display: block;
+        }
     }
 
     .search-wrapper {
