@@ -918,7 +918,7 @@ button {
   border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
-  min-height: 228px;
+  min-height: 236px;
 }
 .slider-item--btn {
   margin-top: 16px;
