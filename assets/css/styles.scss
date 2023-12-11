@@ -2371,6 +2371,9 @@ textarea {
 
     &.custom-iframe {
         height: 320px;
+        .detail-wrapper & {
+            height: 100%;
+        }
     }
 }
 
@@ -2549,6 +2552,13 @@ textarea {
 
         &--img {
             width: 100%;
+            height: 438px;
+            @media screen and (max-width: 980px) {
+                height: 318px;
+            }
+            @media screen and (max-width: 767px) {
+                height: 247px;
+            }
         }
 
         &--picture {
@@ -2803,6 +2813,10 @@ textarea {
         &--label {
             width: 50%;
             flex: 0 0 50%;
+            li {
+                list-style-type: disc;
+                margin-left: 17px;
+            }
         }
     }
 }
